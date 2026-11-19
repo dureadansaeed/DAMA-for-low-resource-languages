@@ -1,0 +1,22 @@
+
+=== cv:ia: caching features (16:48) ===
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 25986.88it/s]
+[transformers] The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+--- [0/8 runs done, 0%] cv:ia lora start 16:48
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer WhisperTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+RESULT {"ds": "cv", "lang": "ia", "method": "lora", "lr": 0.0005, "wer": 35.85, "trainable_M": 55.17, "peak_gb": 2.8, "train_s": 31, "n_test": 32}
+--- [1/8 runs done, 12%] cv:ia dama start 16:48, overall ETA ~0.1h
+RESULT {"ds": "cv", "lang": "ia", "method": "dama", "lr": 0.0005, "wer": 42.92, "trainable_M": 43.35, "peak_gb": 2.63, "train_s": 31, "n_test": 32}
+--- [2/8 runs done, 25%] cv:ia ft start 16:49, overall ETA ~0.1h
+RESULT {"ds": "cv", "lang": "ia", "method": "ft", "lr": 1e-05, "wer": 41.98, "trainable_M": 153.58, "peak_gb": 3.79, "train_s": 28, "n_test": 32}
+--- [3/8 runs done, 38%] cv:ia lorafa start 16:49, overall ETA ~0.0h
+RESULT {"ds": "cv", "lang": "ia", "method": "lorafa", "lr": 0.0005, "wer": 37.26, "trainable_M": 47.5, "peak_gb": 2.72, "train_s": 31, "n_test": 32}
+--- [4/8 runs done, 50%] cv:ia dora start 16:50, overall ETA ~0.0h
+RESULT {"ds": "cv", "lang": "ia", "method": "dora", "lr": 0.0005, "wer": 35.85, "trainable_M": 55.29, "peak_gb": 3.73, "train_s": 32, "n_test": 32}
+--- [5/8 runs done, 62%] cv:ia loraxs start 16:51, overall ETA ~0.0h
+RESULT {"ds": "cv", "lang": "ia", "method": "loraxs", "lr": 0.001, "wer": 41.51, "trainable_M": 40.32, "peak_gb": 2.65, "train_s": 30, "n_test": 32}
+--- [6/8 runs done, 75%] cv:ia adalora start 16:51, overall ETA ~0.0h
+RESULT {"ds": "cv", "lang": "ia", "method": "adalora", "lr": 0.001, "wer": 54.72, "trainable_M": 51.34, "peak_gb": 3.24, "train_s": 33, "n_test": 32}
+--- [7/8 runs done, 88%] cv:ia vblora start 16:52, overall ETA ~0.0h
+RESULT {"ds": "cv", "lang": "ia", "method": "vblora", "lr": 0.001, "wer": 53.77, "trainable_M": 41.7, "peak_gb": 3.51, "train_s": 35, "n_test": 32}
+ALL DONE 16:53

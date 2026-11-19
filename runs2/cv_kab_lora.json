@@ -1,0 +1,1 @@
+{"ds": "cv", "lang": "kab", "method": "lora", "lr": 0.0005, "wer": 68.47, "trainable_M": 55.17, "peak_gb": 3.08, "train_s": 484, "n_test": 943}

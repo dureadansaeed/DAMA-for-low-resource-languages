@@ -1,0 +1,1 @@
+{"ds": "cv", "lang": "ckb", "method": "loraxs", "lr": 0.001, "wer": 63.25, "trainable_M": 40.32, "peak_gb": 3.09, "train_s": 674, "n_test": 787}

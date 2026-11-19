@@ -1,0 +1,1 @@
+{"ds": "cv", "lang": "ia", "method": "lora", "lr": 0.002, "wer": 113.84, "trainable_M": 55.17, "peak_gb": 2.83, "train_s": 253, "n_test": 840}

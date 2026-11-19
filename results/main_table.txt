@@ -1,0 +1,25 @@
+method       CV  FLseen  FLunsn    ALL  ALL_s1  adapterM    GB   min
+adalora    47.9    35.3    51.6   45.7    45.6      11.5   3.9   5.0
+dama       47.7    35.3    50.9   45.4    45.6       3.5   3.2   3.8
+dora       44.9    33.3    49.7   43.2    43.2      15.5   4.6   4.6
+ft         47.9    36.5    51.8   46.0    45.7     153.6   4.5   4.2
+lora       45.4    33.4    49.7   43.5    43.6      15.3   3.5   3.9
+lorafa     48.6    36.4    51.9   46.4    46.6       7.7   3.3   3.8
+loraxs     57.7    42.2    56.6   53.6    53.2       0.5   3.2   3.6
+vblora     59.6    44.2    58.0   55.3    55.1       1.9   4.1   4.8
+
+DAMA minus LoRA per language (negative = DAMA better)
+seed 0: mean +1.93  sd 1.23  DAMA better on 1/20 languages
+seed 1: mean +2.03  sd 1.02  DAMA better on 0/20 languages
+
+Seen languages (WER): zeroshot vs methods
+method      be     cy     fa     hi     sw   avg
+zeroshot  76.7   65.5   57.6   68.7   80.6   69.8
+adalora   30.2   43.7   26.7   42.9   33.1   35.3
+dama      30.1   42.8   27.2   42.5   33.9   35.3
+dora      27.9   41.5   25.4   40.5   31.4   33.3
+ft        30.1   46.5   27.1   42.8   36.2   36.5
+lora      26.6   41.2   25.5   40.9   32.7   33.4
+lorafa    29.8   45.4   28.3   42.8   35.6   36.4
+loraxs    36.5   50.8   33.2   46.2   44.3   42.2
+vblora    39.5   54.5   34.9   49.1   43.0   44.2

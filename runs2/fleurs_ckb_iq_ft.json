@@ -1,0 +1,1 @@
+{"ds": "fleurs", "lang": "ckb_iq", "method": "ft", "lr": 1e-05, "wer": 59.52, "trainable_M": 153.58, "peak_gb": 5.92, "train_s": 203, "n_test": 311}

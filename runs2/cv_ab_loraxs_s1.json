@@ -1,0 +1,1 @@
+{"ds": "cv", "lang": "ab", "method": "loraxs", "lr": 0.001, "wer": 76.23, "trainable_M": 40.32, "peak_gb": 3.05, "train_s": 298, "n_test": 690}

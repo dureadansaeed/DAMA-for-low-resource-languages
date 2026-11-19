@@ -1,0 +1,1 @@
+{"ds": "cv", "lang": "rw", "method": "dama", "lr": 0.0005, "wer": 73.61, "trainable_M": 43.35, "peak_gb": 2.8, "train_s": 707, "n_test": 656}

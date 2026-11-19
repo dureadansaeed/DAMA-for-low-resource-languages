@@ -1,0 +1,44 @@
+
+=== fleurs:hi_in: caching features (11:10) ===
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 21527.23it/s]
+  caching train: 640/2115
+  caching train: 1280/2115
+  caching train: 1920/2115
+--- [0/5 runs done, 0%] fleurs:hi_in zeroshot start 11:10
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer WhisperTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+RESULT {"ds": "fleurs", "lang": "hi_in", "method": "zeroshot", "lr": 0, "wer": 68.7, "trainable_M": 0.0, "peak_gb": 0.97, "train_s": 0, "n_test": 311}
+
+=== fleurs:cy_gb: caching features (11:12) ===
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 19379.30it/s]
+  caching train: 640/2918
+  caching train: 1280/2918
+  caching train: 1920/2918
+  caching train: 2560/2918
+--- [1/5 runs done, 20%] fleurs:cy_gb zeroshot start 11:12, overall ETA ~0.1h
+RESULT {"ds": "fleurs", "lang": "cy_gb", "method": "zeroshot", "lr": 0, "wer": 65.45, "trainable_M": 0.0, "peak_gb": 0.97, "train_s": 0, "n_test": 248}
+
+=== fleurs:be_by: caching features (11:13) ===
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 23821.38it/s]
+  caching train: 640/2412
+  caching train: 1280/2412
+  caching train: 1920/2412
+--- [2/5 runs done, 40%] fleurs:be_by zeroshot start 11:14, overall ETA ~0.1h
+RESULT {"ds": "fleurs", "lang": "be_by", "method": "zeroshot", "lr": 0, "wer": 76.73, "trainable_M": 0.0, "peak_gb": 0.97, "train_s": 0, "n_test": 244}
+
+=== fleurs:fa_ir: caching features (11:15) ===
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 27880.54it/s]
+  caching train: 640/2580
+  caching train: 1280/2580
+  caching train: 1920/2580
+  caching train: 2560/2580
+--- [3/5 runs done, 60%] fleurs:fa_ir zeroshot start 11:15, overall ETA ~0.0h
+RESULT {"ds": "fleurs", "lang": "fa_ir", "method": "zeroshot", "lr": 0, "wer": 57.65, "trainable_M": 0.0, "peak_gb": 0.97, "train_s": 0, "n_test": 234}
+
+=== fleurs:sw_ke: caching features (11:17) ===
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 21568.13it/s]
+  caching train: 640/2360
+  caching train: 1280/2360
+  caching train: 1920/2360
+--- [4/5 runs done, 80%] fleurs:sw_ke zeroshot start 11:17, overall ETA ~0.0h
+RESULT {"ds": "fleurs", "lang": "sw_ke", "method": "zeroshot", "lr": 0, "wer": 80.58, "trainable_M": 0.0, "peak_gb": 0.97, "train_s": 0, "n_test": 258}
+ALL DONE 11:18

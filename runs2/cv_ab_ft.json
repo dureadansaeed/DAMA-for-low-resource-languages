@@ -1,0 +1,1 @@
+{"ds": "cv", "lang": "ab", "method": "ft", "lr": 1e-05, "wer": 66.68, "trainable_M": 153.58, "peak_gb": 4.21, "train_s": 349, "n_test": 690}

@@ -1,0 +1,328 @@
+
+=== cv:ia: caching features (14:15) ===
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 25888.76it/s]
+[transformers] The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+  caching train: 640/5017
+  caching train: 1280/5017
+  caching train: 1920/5017
+  caching train: 2560/5017
+  caching train: 3200/5017
+  caching train: 3840/5017
+  caching train: 4480/5017
+  caching test: 640/840
+--- [0/12 runs done, 0%] cv:ia lora start 14:15
+  lora step 50/1672 (3%) loss 1.615 elapsed 0.1m, ~3.4m left
+  lora step 100/1672 (6%) loss 1.475 elapsed 0.2m, ~3.2m left
+  lora step 150/1672 (9%) loss 1.953 elapsed 0.4m, ~3.6m left
+  lora step 200/1672 (12%) loss 4.233 elapsed 0.5m, ~3.4m left
+  lora step 250/1672 (15%) loss 3.511 elapsed 0.6m, ~3.5m left
+  lora step 300/1672 (18%) loss 3.052 elapsed 0.7m, ~3.3m left
+  lora step 350/1672 (21%) loss 3.747 elapsed 0.9m, ~3.3m left
+  lora step 400/1672 (24%) loss 3.804 elapsed 1.0m, ~3.1m left
+  lora step 450/1672 (27%) loss 2.831 elapsed 1.1m, ~3.0m left
+  lora step 500/1672 (30%) loss 2.563 elapsed 1.2m, ~2.9m left
+  lora step 550/1672 (33%) loss 3.562 elapsed 1.4m, ~2.8m left
+  lora step 600/1672 (36%) loss 2.751 elapsed 1.5m, ~2.6m left
+  lora step 650/1672 (39%) loss 2.841 elapsed 1.6m, ~2.6m left
+  lora step 700/1672 (42%) loss 1.967 elapsed 1.7m, ~2.4m left
+  lora step 750/1672 (45%) loss 2.355 elapsed 1.9m, ~2.3m left
+  lora step 800/1672 (48%) loss 3.663 elapsed 2.0m, ~2.2m left
+  lora step 850/1672 (51%) loss 2.593 elapsed 2.1m, ~2.1m left
+  lora step 900/1672 (54%) loss 2.666 elapsed 2.2m, ~1.9m left
+  lora step 950/1672 (57%) loss 1.747 elapsed 2.4m, ~1.8m left
+  lora step 1000/1672 (60%) loss 2.257 elapsed 2.5m, ~1.7m left
+  lora step 1050/1672 (63%) loss 2.108 elapsed 2.6m, ~1.6m left
+  lora step 1100/1672 (66%) loss 2.050 elapsed 2.8m, ~1.4m left
+  lora step 1150/1672 (69%) loss 1.819 elapsed 2.9m, ~1.3m left
+  lora step 1200/1672 (72%) loss 1.690 elapsed 3.0m, ~1.2m left
+  lora step 1250/1672 (75%) loss 2.271 elapsed 3.2m, ~1.1m left
+  lora step 1300/1672 (78%) loss 2.157 elapsed 3.3m, ~0.9m left
+  lora step 1350/1672 (81%) loss 2.296 elapsed 3.4m, ~0.8m left
+  lora step 1400/1672 (84%) loss 3.029 elapsed 3.5m, ~0.7m left
+  lora step 1450/1672 (87%) loss 2.204 elapsed 3.6m, ~0.6m left
+  lora step 1500/1672 (90%) loss 2.697 elapsed 3.8m, ~0.4m left
+  lora step 1550/1672 (93%) loss 2.452 elapsed 3.9m, ~0.3m left
+  lora step 1600/1672 (96%) loss 2.012 elapsed 4.0m, ~0.2m left
+  lora step 1650/1672 (99%) loss 1.419 elapsed 4.1m, ~0.1m left
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer WhisperTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+RESULT {"ds": "cv", "lang": "ia", "method": "lora", "lr": 0.002, "wer": 113.84, "trainable_M": 55.17, "peak_gb": 2.83, "train_s": 253, "n_test": 840}
+--- [1/12 runs done, 8%] cv:ia dama start 14:23, overall ETA ~1.4h
+  dama step 50/1672 (3%) loss 6.739 elapsed 0.1m, ~3.2m left
+  dama step 100/1672 (6%) loss 5.597 elapsed 0.2m, ~3.1m left
+  dama step 150/1672 (9%) loss 5.320 elapsed 0.3m, ~3.5m left
+  dama step 200/1672 (12%) loss 5.265 elapsed 0.4m, ~3.3m left
+  dama step 250/1672 (15%) loss 4.269 elapsed 0.6m, ~3.4m left
+  dama step 300/1672 (18%) loss 4.261 elapsed 0.7m, ~3.2m left
+  dama step 350/1672 (21%) loss 4.360 elapsed 0.8m, ~3.2m left
+  dama step 400/1672 (24%) loss 5.041 elapsed 0.9m, ~3.0m left
+  dama step 450/1672 (27%) loss 4.122 elapsed 1.1m, ~2.9m left
+  dama step 500/1672 (30%) loss 3.801 elapsed 1.2m, ~2.8m left
+  dama step 550/1672 (33%) loss 4.545 elapsed 1.3m, ~2.7m left
+  dama step 600/1672 (36%) loss 4.036 elapsed 1.4m, ~2.6m left
+  dama step 650/1672 (39%) loss 4.114 elapsed 1.6m, ~2.5m left
+  dama step 700/1672 (42%) loss 3.422 elapsed 1.7m, ~2.3m left
+  dama step 750/1672 (45%) loss 3.640 elapsed 1.8m, ~2.2m left
+  dama step 800/1672 (48%) loss 4.823 elapsed 1.9m, ~2.1m left
+  dama step 850/1672 (51%) loss 4.121 elapsed 2.1m, ~2.0m left
+  dama step 900/1672 (54%) loss 4.151 elapsed 2.2m, ~1.9m left
+  dama step 950/1672 (57%) loss 3.199 elapsed 2.3m, ~1.8m left
+  dama step 1000/1672 (60%) loss 4.069 elapsed 2.4m, ~1.6m left
+  dama step 1050/1672 (63%) loss 4.089 elapsed 2.6m, ~1.5m left
+  dama step 1100/1672 (66%) loss 3.610 elapsed 2.7m, ~1.4m left
+  dama step 1150/1672 (69%) loss 3.676 elapsed 2.8m, ~1.3m left
+  dama step 1200/1672 (72%) loss 3.533 elapsed 2.9m, ~1.1m left
+  dama step 1250/1672 (75%) loss 4.380 elapsed 3.1m, ~1.0m left
+  dama step 1300/1672 (78%) loss 4.293 elapsed 3.2m, ~0.9m left
+  dama step 1350/1672 (81%) loss 4.289 elapsed 3.3m, ~0.8m left
+  dama step 1400/1672 (84%) loss 4.651 elapsed 3.4m, ~0.7m left
+  dama step 1450/1672 (87%) loss 4.562 elapsed 3.5m, ~0.5m left
+  dama step 1500/1672 (90%) loss 4.375 elapsed 3.6m, ~0.4m left
+  dama step 1550/1672 (93%) loss 3.825 elapsed 3.7m, ~0.3m left
+  dama step 1600/1672 (96%) loss 4.134 elapsed 3.9m, ~0.2m left
+  dama step 1650/1672 (99%) loss 3.473 elapsed 4.0m, ~0.1m left
+RESULT {"ds": "cv", "lang": "ia", "method": "dama", "lr": 0.002, "wer": 246.59, "trainable_M": 43.35, "peak_gb": 2.63, "train_s": 245, "n_test": 840}
+--- [2/12 runs done, 17%] cv:ia loraxs start 14:31, overall ETA ~1.3h
+  loraxs step 50/1672 (3%) loss 0.801 elapsed 0.1m, ~3.0m left
+  loraxs step 100/1672 (6%) loss 0.429 elapsed 0.2m, ~2.9m left
+  loraxs step 150/1672 (9%) loss 0.541 elapsed 0.3m, ~3.3m left
+  loraxs step 200/1672 (12%) loss 0.795 elapsed 0.4m, ~3.1m left
+  loraxs step 250/1672 (15%) loss 0.170 elapsed 0.6m, ~3.2m left
+  loraxs step 300/1672 (18%) loss 0.337 elapsed 0.6m, ~3.0m left
+  loraxs step 350/1672 (21%) loss 0.244 elapsed 0.8m, ~3.0m left
+  loraxs step 400/1672 (24%) loss 0.355 elapsed 0.9m, ~2.8m left
+  loraxs step 450/1672 (27%) loss 0.208 elapsed 1.0m, ~2.8m left
+  loraxs step 500/1672 (30%) loss 0.366 elapsed 1.1m, ~2.6m left
+  loraxs step 550/1672 (33%) loss 0.248 elapsed 1.3m, ~2.6m left
+  loraxs step 600/1672 (36%) loss 0.294 elapsed 1.3m, ~2.4m left
+  loraxs step 650/1672 (39%) loss 0.161 elapsed 1.5m, ~2.3m left
+  loraxs step 700/1672 (42%) loss 0.292 elapsed 1.6m, ~2.2m left
+  loraxs step 750/1672 (45%) loss 0.383 elapsed 1.7m, ~2.1m left
+  loraxs step 800/1672 (48%) loss 0.200 elapsed 1.8m, ~2.0m left
+  loraxs step 850/1672 (51%) loss 0.185 elapsed 2.0m, ~1.9m left
+  loraxs step 900/1672 (54%) loss 0.205 elapsed 2.0m, ~1.8m left
+  loraxs step 950/1672 (57%) loss 0.240 elapsed 2.2m, ~1.7m left
+  loraxs step 1000/1672 (60%) loss 0.195 elapsed 2.3m, ~1.5m left
+  loraxs step 1050/1672 (63%) loss 0.286 elapsed 2.4m, ~1.4m left
+  loraxs step 1100/1672 (66%) loss 0.142 elapsed 2.5m, ~1.3m left
+  loraxs step 1150/1672 (69%) loss 0.305 elapsed 2.6m, ~1.2m left
+  loraxs step 1200/1672 (72%) loss 0.168 elapsed 2.7m, ~1.1m left
+  loraxs step 1250/1672 (75%) loss 0.136 elapsed 2.9m, ~1.0m left
+  loraxs step 1300/1672 (78%) loss 0.172 elapsed 3.0m, ~0.9m left
+  loraxs step 1350/1672 (81%) loss 0.163 elapsed 3.1m, ~0.7m left
+  loraxs step 1400/1672 (84%) loss 0.124 elapsed 3.2m, ~0.6m left
+  loraxs step 1450/1672 (87%) loss 0.060 elapsed 3.3m, ~0.5m left
+  loraxs step 1500/1672 (90%) loss 0.195 elapsed 3.4m, ~0.4m left
+  loraxs step 1550/1672 (93%) loss 0.242 elapsed 3.5m, ~0.3m left
+  loraxs step 1600/1672 (96%) loss 0.209 elapsed 3.7m, ~0.2m left
+  loraxs step 1650/1672 (99%) loss 0.045 elapsed 3.8m, ~0.1m left
+RESULT {"ds": "cv", "lang": "ia", "method": "loraxs", "lr": 0.002, "wer": 16.6, "trainable_M": 40.32, "peak_gb": 2.65, "train_s": 231, "n_test": 840}
+--- [3/12 runs done, 25%] cv:ia vblora start 14:37, overall ETA ~1.1h
+  vblora step 50/1672 (3%) loss 0.428 elapsed 0.1m, ~4.2m left
+  vblora step 100/1672 (6%) loss 0.398 elapsed 0.3m, ~4.1m left
+  vblora step 150/1672 (9%) loss 0.544 elapsed 0.4m, ~4.5m left
+  vblora step 200/1672 (12%) loss 0.544 elapsed 0.6m, ~4.2m left
+  vblora step 250/1672 (15%) loss 0.596 elapsed 0.8m, ~4.3m left
+  vblora step 300/1672 (18%) loss 0.570 elapsed 0.9m, ~4.1m left
+  vblora step 350/1672 (21%) loss 0.436 elapsed 1.1m, ~4.1m left
+  vblora step 400/1672 (24%) loss 0.354 elapsed 1.2m, ~3.8m left
+  vblora step 450/1672 (27%) loss 0.267 elapsed 1.4m, ~3.8m left
+  vblora step 500/1672 (30%) loss 0.321 elapsed 1.5m, ~3.6m left
+  vblora step 550/1672 (33%) loss 0.385 elapsed 1.7m, ~3.5m left
+  vblora step 600/1672 (36%) loss 0.468 elapsed 1.8m, ~3.3m left
+  vblora step 650/1672 (39%) loss 0.337 elapsed 2.0m, ~3.2m left
+  vblora step 700/1672 (42%) loss 0.289 elapsed 2.1m, ~3.0m left
+  vblora step 750/1672 (45%) loss 0.361 elapsed 2.3m, ~2.9m left
+  vblora step 800/1672 (48%) loss 0.332 elapsed 2.5m, ~2.7m left
+  vblora step 850/1672 (51%) loss 0.445 elapsed 2.6m, ~2.6m left
+  vblora step 900/1672 (54%) loss 0.211 elapsed 2.8m, ~2.4m left
+  vblora step 950/1672 (57%) loss 0.563 elapsed 3.0m, ~2.2m left
+  vblora step 1000/1672 (60%) loss 0.257 elapsed 3.1m, ~2.1m left
+  vblora step 1050/1672 (63%) loss 0.467 elapsed 3.3m, ~1.9m left
+  vblora step 1100/1672 (66%) loss 0.363 elapsed 3.4m, ~1.8m left
+  vblora step 1150/1672 (69%) loss 0.161 elapsed 3.6m, ~1.6m left
+  vblora step 1200/1672 (72%) loss 0.297 elapsed 3.7m, ~1.5m left
+  vblora step 1250/1672 (75%) loss 0.447 elapsed 3.9m, ~1.3m left
+  vblora step 1300/1672 (78%) loss 0.340 elapsed 4.0m, ~1.2m left
+  vblora step 1350/1672 (81%) loss 0.258 elapsed 4.2m, ~1.0m left
+  vblora step 1400/1672 (84%) loss 0.173 elapsed 4.3m, ~0.8m left
+  vblora step 1450/1672 (87%) loss 0.185 elapsed 4.5m, ~0.7m left
+  vblora step 1500/1672 (90%) loss 0.356 elapsed 4.7m, ~0.5m left
+  vblora step 1550/1672 (93%) loss 0.262 elapsed 4.8m, ~0.4m left
+  vblora step 1600/1672 (96%) loss 0.377 elapsed 5.0m, ~0.2m left
+  vblora step 1650/1672 (99%) loss 0.399 elapsed 5.1m, ~0.1m left
+RESULT {"ds": "cv", "lang": "ia", "method": "vblora", "lr": 0.002, "wer": 17.52, "trainable_M": 41.7, "peak_gb": 3.51, "train_s": 313, "n_test": 840}
+
+=== cv:kmr: caching features (14:44) ===
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 15269.17it/s]
+  caching train: 640/4449
+  caching train: 1280/4449
+  caching train: 1920/4449
+  caching train: 2560/4449
+  caching train: 3200/4449
+  caching train: 3840/4449
+  caching test: 640/777
+--- [4/12 runs done, 33%] cv:kmr lora start 14:44, overall ETA ~1.0h
+  lora step 50/1482 (3%) loss 5.507 elapsed 0.1m, ~2.9m left
+  lora step 100/1482 (7%) loss 5.178 elapsed 0.3m, ~3.5m left
+  lora step 150/1482 (10%) loss 4.537 elapsed 0.4m, ~3.2m left
+  lora step 200/1482 (13%) loss 5.260 elapsed 0.5m, ~3.3m left
+  lora step 250/1482 (17%) loss 4.507 elapsed 0.6m, ~3.0m left
+  lora step 300/1482 (20%) loss 4.849 elapsed 0.8m, ~3.0m left
+  lora step 350/1482 (24%) loss 5.390 elapsed 0.9m, ~2.8m left
+  lora step 400/1482 (27%) loss 4.694 elapsed 1.0m, ~2.8m left
+  lora step 450/1482 (30%) loss 4.699 elapsed 1.1m, ~2.6m left
+  lora step 500/1482 (34%) loss 4.834 elapsed 1.3m, ~2.5m left
+  lora step 550/1482 (37%) loss 4.810 elapsed 1.4m, ~2.3m left
+  lora step 600/1482 (40%) loss 3.670 elapsed 1.5m, ~2.3m left
+  lora step 650/1482 (44%) loss 4.700 elapsed 1.7m, ~2.2m left
+  lora step 700/1482 (47%) loss 3.524 elapsed 1.8m, ~2.0m left
+  lora step 750/1482 (51%) loss 5.272 elapsed 1.9m, ~1.9m left
+  lora step 800/1482 (54%) loss 4.567 elapsed 2.0m, ~1.7m left
+  lora step 850/1482 (57%) loss 4.702 elapsed 2.2m, ~1.6m left
+  lora step 900/1482 (61%) loss 4.581 elapsed 2.3m, ~1.5m left
+  lora step 950/1482 (64%) loss 5.031 elapsed 2.5m, ~1.4m left
+  lora step 1000/1482 (67%) loss 3.175 elapsed 2.6m, ~1.2m left
+  lora step 1050/1482 (71%) loss 3.320 elapsed 2.7m, ~1.1m left
+  lora step 1100/1482 (74%) loss 4.533 elapsed 2.8m, ~1.0m left
+  lora step 1150/1482 (78%) loss 3.870 elapsed 3.0m, ~0.9m left
+  lora step 1200/1482 (81%) loss 3.907 elapsed 3.1m, ~0.7m left
+  lora step 1250/1482 (84%) loss 3.973 elapsed 3.2m, ~0.6m left
+  lora step 1300/1482 (88%) loss 4.214 elapsed 3.4m, ~0.5m left
+  lora step 1350/1482 (91%) loss 4.373 elapsed 3.5m, ~0.3m left
+  lora step 1400/1482 (94%) loss 4.249 elapsed 3.6m, ~0.2m left
+  lora step 1450/1482 (98%) loss 4.131 elapsed 3.7m, ~0.1m left
+RESULT {"ds": "cv", "lang": "kmr", "method": "lora", "lr": 0.002, "wer": 115.8, "trainable_M": 55.17, "peak_gb": 2.91, "train_s": 231, "n_test": 777}
+--- [5/12 runs done, 42%] cv:kmr dama start 14:51, overall ETA ~0.8h
+  dama step 50/1482 (3%) loss 1.531 elapsed 0.1m, ~2.8m left
+  dama step 100/1482 (7%) loss 1.585 elapsed 0.2m, ~3.4m left
+  dama step 150/1482 (10%) loss 1.286 elapsed 0.3m, ~3.1m left
+  dama step 200/1482 (13%) loss 1.646 elapsed 0.5m, ~3.2m left
+  dama step 250/1482 (17%) loss 1.424 elapsed 0.6m, ~2.9m left
+  dama step 300/1482 (20%) loss 2.109 elapsed 0.7m, ~2.9m left
+  dama step 350/1482 (24%) loss 1.186 elapsed 0.8m, ~2.7m left
+  dama step 400/1482 (27%) loss 1.131 elapsed 1.0m, ~2.7m left
+  dama step 450/1482 (30%) loss 1.044 elapsed 1.1m, ~2.5m left
+  dama step 500/1482 (34%) loss 0.993 elapsed 1.2m, ~2.4m left
+  dama step 550/1482 (37%) loss 0.931 elapsed 1.3m, ~2.3m left
+  dama step 600/1482 (40%) loss 1.070 elapsed 1.5m, ~2.2m left
+  dama step 650/1482 (44%) loss 1.161 elapsed 1.6m, ~2.1m left
+  dama step 700/1482 (47%) loss 0.588 elapsed 1.7m, ~1.9m left
+  dama step 750/1482 (51%) loss 1.154 elapsed 1.9m, ~1.8m left
+  dama step 800/1482 (54%) loss 0.956 elapsed 2.0m, ~1.7m left
+  dama step 850/1482 (57%) loss 0.881 elapsed 2.1m, ~1.6m left
+  dama step 900/1482 (61%) loss 0.675 elapsed 2.2m, ~1.4m left
+  dama step 950/1482 (64%) loss 1.131 elapsed 2.4m, ~1.3m left
+  dama step 1000/1482 (67%) loss 0.653 elapsed 2.5m, ~1.2m left
+  dama step 1050/1482 (71%) loss 0.579 elapsed 2.6m, ~1.1m left
+  dama step 1100/1482 (74%) loss 0.735 elapsed 2.7m, ~1.0m left
+  dama step 1150/1482 (78%) loss 0.897 elapsed 2.9m, ~0.8m left
+  dama step 1200/1482 (81%) loss 0.766 elapsed 3.0m, ~0.7m left
+  dama step 1250/1482 (84%) loss 0.593 elapsed 3.1m, ~0.6m left
+  dama step 1300/1482 (88%) loss 0.641 elapsed 3.3m, ~0.5m left
+  dama step 1350/1482 (91%) loss 0.919 elapsed 3.4m, ~0.3m left
+  dama step 1400/1482 (94%) loss 1.050 elapsed 3.5m, ~0.2m left
+  dama step 1450/1482 (98%) loss 0.795 elapsed 3.6m, ~0.1m left
+RESULT {"ds": "cv", "lang": "kmr", "method": "dama", "lr": 0.002, "wer": 57.92, "trainable_M": 43.35, "peak_gb": 2.69, "train_s": 225, "n_test": 777}
+--- [6/12 runs done, 50%] cv:kmr loraxs start 14:57, overall ETA ~0.7h
+  loraxs step 50/1482 (3%) loss 1.391 elapsed 0.1m, ~2.6m left
+  loraxs step 100/1482 (7%) loss 1.199 elapsed 0.2m, ~3.2m left
+  loraxs step 150/1482 (10%) loss 0.833 elapsed 0.3m, ~2.9m left
+  loraxs step 200/1482 (13%) loss 1.130 elapsed 0.5m, ~3.0m left
+  loraxs step 250/1482 (17%) loss 0.788 elapsed 0.6m, ~2.8m left
+  loraxs step 300/1482 (20%) loss 1.127 elapsed 0.7m, ~2.8m left
+  loraxs step 350/1482 (24%) loss 0.982 elapsed 0.8m, ~2.6m left
+  loraxs step 400/1482 (27%) loss 0.863 elapsed 0.9m, ~2.5m left
+  loraxs step 450/1482 (30%) loss 0.756 elapsed 1.0m, ~2.4m left
+  loraxs step 500/1482 (34%) loss 0.830 elapsed 1.2m, ~2.3m left
+  loraxs step 550/1482 (37%) loss 0.676 elapsed 1.3m, ~2.1m left
+  loraxs step 600/1482 (40%) loss 0.761 elapsed 1.4m, ~2.1m left
+  loraxs step 650/1482 (44%) loss 0.771 elapsed 1.5m, ~2.0m left
+  loraxs step 700/1482 (47%) loss 0.448 elapsed 1.6m, ~1.8m left
+  loraxs step 750/1482 (51%) loss 0.899 elapsed 1.8m, ~1.7m left
+  loraxs step 800/1482 (54%) loss 0.749 elapsed 1.9m, ~1.6m left
+  loraxs step 850/1482 (57%) loss 0.713 elapsed 2.0m, ~1.5m left
+  loraxs step 900/1482 (61%) loss 0.559 elapsed 2.1m, ~1.4m left
+  loraxs step 950/1482 (64%) loss 1.009 elapsed 2.2m, ~1.3m left
+  loraxs step 1000/1482 (67%) loss 0.579 elapsed 2.3m, ~1.1m left
+  loraxs step 1050/1482 (71%) loss 0.695 elapsed 2.5m, ~1.0m left
+  loraxs step 1100/1482 (74%) loss 0.758 elapsed 2.6m, ~0.9m left
+  loraxs step 1150/1482 (78%) loss 0.651 elapsed 2.7m, ~0.8m left
+  loraxs step 1200/1482 (81%) loss 0.724 elapsed 2.9m, ~0.7m left
+  loraxs step 1250/1482 (84%) loss 0.485 elapsed 2.9m, ~0.5m left
+  loraxs step 1300/1482 (88%) loss 0.604 elapsed 3.1m, ~0.4m left
+  loraxs step 1350/1482 (91%) loss 0.741 elapsed 3.2m, ~0.3m left
+  loraxs step 1400/1482 (94%) loss 0.943 elapsed 3.3m, ~0.2m left
+  loraxs step 1450/1482 (98%) loss 0.647 elapsed 3.4m, ~0.1m left
+RESULT {"ds": "cv", "lang": "kmr", "method": "loraxs", "lr": 0.002, "wer": 56.31, "trainable_M": 40.32, "peak_gb": 2.71, "train_s": 211, "n_test": 777}
+--- [7/12 runs done, 58%] cv:kmr vblora start 15:02, overall ETA ~0.6h
+  vblora step 50/1482 (3%) loss 1.599 elapsed 0.1m, ~3.7m left
+  vblora step 100/1482 (7%) loss 1.290 elapsed 0.3m, ~4.4m left
+  vblora step 150/1482 (10%) loss 1.486 elapsed 0.4m, ~3.9m left
+  vblora step 200/1482 (13%) loss 0.982 elapsed 0.6m, ~4.0m left
+  vblora step 250/1482 (17%) loss 1.085 elapsed 0.8m, ~3.7m left
+  vblora step 300/1482 (20%) loss 1.262 elapsed 0.9m, ~3.7m left
+  vblora step 350/1482 (24%) loss 1.048 elapsed 1.1m, ~3.5m left
+  vblora step 400/1482 (27%) loss 0.876 elapsed 1.3m, ~3.4m left
+  vblora step 450/1482 (30%) loss 0.900 elapsed 1.4m, ~3.2m left
+  vblora step 500/1482 (34%) loss 1.032 elapsed 1.6m, ~3.1m left
+  vblora step 550/1482 (37%) loss 1.038 elapsed 1.7m, ~2.9m left
+  vblora step 600/1482 (40%) loss 1.161 elapsed 1.9m, ~2.8m left
+  vblora step 650/1482 (44%) loss 0.680 elapsed 2.1m, ~2.7m left
+  vblora step 700/1482 (47%) loss 0.900 elapsed 2.2m, ~2.5m left
+  vblora step 750/1482 (51%) loss 1.042 elapsed 2.4m, ~2.3m left
+  vblora step 800/1482 (54%) loss 0.964 elapsed 2.5m, ~2.1m left
+  vblora step 850/1482 (57%) loss 0.663 elapsed 2.7m, ~2.0m left
+  vblora step 900/1482 (61%) loss 0.744 elapsed 2.8m, ~1.8m left
+  vblora step 950/1482 (64%) loss 0.932 elapsed 3.0m, ~1.7m left
+  vblora step 1000/1482 (67%) loss 1.005 elapsed 3.1m, ~1.5m left
+  vblora step 1050/1482 (71%) loss 0.722 elapsed 3.3m, ~1.4m left
+  vblora step 1100/1482 (74%) loss 0.985 elapsed 3.5m, ~1.2m left
+  vblora step 1150/1482 (78%) loss 1.008 elapsed 3.6m, ~1.1m left
+  vblora step 1200/1482 (81%) loss 0.716 elapsed 3.8m, ~0.9m left
+  vblora step 1250/1482 (84%) loss 0.786 elapsed 4.0m, ~0.7m left
+  vblora step 1300/1482 (88%) loss 0.919 elapsed 4.1m, ~0.6m left
+  vblora step 1350/1482 (91%) loss 1.265 elapsed 4.3m, ~0.4m left
+  vblora step 1400/1482 (94%) loss 0.659 elapsed 4.5m, ~0.3m left
+  vblora step 1450/1482 (98%) loss 0.685 elapsed 4.6m, ~0.1m left
+RESULT {"ds": "cv", "lang": "kmr", "method": "vblora", "lr": 0.002, "wer": 56.54, "trainable_M": 41.7, "peak_gb": 3.57, "train_s": 284, "n_test": 777}
+
+=== fleurs:or_in: caching features (15:10) ===
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 20278.29it/s]
+  caching train: 640/1079
+--- [8/12 runs done, 67%] fleurs:or_in lora start 15:10, overall ETA ~0.5h
+  lora step 50/358 (14%) loss 1.461 elapsed 0.3m, ~1.8m left
+  lora step 100/358 (28%) loss 1.341 elapsed 0.6m, ~1.5m left
+  lora step 150/358 (42%) loss 1.339 elapsed 0.9m, ~1.2m left
+  lora step 200/358 (56%) loss 1.144 elapsed 1.2m, ~1.0m left
+  lora step 250/358 (70%) loss 1.002 elapsed 1.5m, ~0.7m left
+  lora step 300/358 (84%) loss 0.748 elapsed 1.8m, ~0.4m left
+  lora step 350/358 (98%) loss 0.453 elapsed 2.1m, ~0.0m left
+RESULT {"ds": "fleurs", "lang": "or_in", "method": "lora", "lr": 0.002, "wer": 96.85, "trainable_M": 55.17, "peak_gb": 5.72, "train_s": 133, "n_test": 297}
+--- [9/12 runs done, 75%] fleurs:or_in dama start 15:15, overall ETA ~0.3h
+  dama step 50/358 (14%) loss 1.366 elapsed 0.3m, ~1.8m left
+  dama step 100/358 (28%) loss 1.275 elapsed 0.6m, ~1.5m left
+  dama step 150/358 (42%) loss 1.134 elapsed 0.9m, ~1.2m left
+  dama step 200/358 (56%) loss 0.424 elapsed 1.2m, ~1.0m left
+  dama step 250/358 (70%) loss 0.267 elapsed 1.5m, ~0.7m left
+  dama step 300/358 (84%) loss 0.228 elapsed 1.8m, ~0.3m left
+  dama step 350/358 (98%) loss 0.217 elapsed 2.1m, ~0.0m left
+RESULT {"ds": "fleurs", "lang": "or_in", "method": "dama", "lr": 0.002, "wer": 91.49, "trainable_M": 43.35, "peak_gb": 5.55, "train_s": 131, "n_test": 297}
+--- [10/12 runs done, 83%] fleurs:or_in loraxs start 15:20, overall ETA ~0.2h
+  loraxs step 50/358 (14%) loss 1.172 elapsed 0.3m, ~1.7m left
+  loraxs step 100/358 (28%) loss 1.044 elapsed 0.5m, ~1.4m left
+  loraxs step 150/358 (42%) loss 0.658 elapsed 0.8m, ~1.1m left
+  loraxs step 200/358 (56%) loss 0.395 elapsed 1.2m, ~0.9m left
+  loraxs step 250/358 (70%) loss 0.293 elapsed 1.4m, ~0.6m left
+  loraxs step 300/358 (84%) loss 0.240 elapsed 1.7m, ~0.3m left
+  loraxs step 350/358 (98%) loss 0.246 elapsed 2.0m, ~0.0m left
+RESULT {"ds": "fleurs", "lang": "or_in", "method": "loraxs", "lr": 0.002, "wer": 94.92, "trainable_M": 40.32, "peak_gb": 5.57, "train_s": 124, "n_test": 297}
+--- [11/12 runs done, 92%] fleurs:or_in vblora start 15:24, overall ETA ~0.1h
+  vblora step 50/358 (14%) loss 1.113 elapsed 0.3m, ~2.1m left
+  vblora step 100/358 (28%) loss 0.929 elapsed 0.7m, ~1.8m left
+  vblora step 150/358 (42%) loss 0.480 elapsed 1.0m, ~1.4m left
+  vblora step 200/358 (56%) loss 0.341 elapsed 1.5m, ~1.2m left
+  vblora step 250/358 (70%) loss 0.280 elapsed 1.8m, ~0.8m left
+  vblora step 300/358 (84%) loss 0.282 elapsed 2.2m, ~0.4m left
+  vblora step 350/358 (98%) loss 0.271 elapsed 2.5m, ~0.1m left
+RESULT {"ds": "fleurs", "lang": "or_in", "method": "vblora", "lr": 0.002, "wer": 93.61, "trainable_M": 41.7, "peak_gb": 6.66, "train_s": 157, "n_test": 297}
+ALL DONE 15:31

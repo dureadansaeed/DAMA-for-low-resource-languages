@@ -1,0 +1,1 @@
+{"ds": "fleurs", "lang": "ckb_iq", "method": "adalora", "lr": 0.001, "wer": 60.24, "trainable_M": 51.34, "peak_gb": 5.23, "train_s": 250, "n_test": 311}

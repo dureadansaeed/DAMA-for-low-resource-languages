@@ -1,0 +1,1 @@
+{"ds": "cv", "lang": "kmr", "method": "ft", "lr": 1e-05, "wer": 46.5, "trainable_M": 153.58, "peak_gb": 3.85, "train_s": 245, "n_test": 777}

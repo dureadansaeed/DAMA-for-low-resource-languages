@@ -1,0 +1,1 @@
+{"ds": "cv", "lang": "ckb", "method": "dama", "lr": 0.0005, "wer": 61.21, "trainable_M": 43.67, "peak_gb": 3.21, "train_s": 658, "n_test": 787}

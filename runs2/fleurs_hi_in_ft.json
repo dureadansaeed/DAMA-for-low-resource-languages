@@ -1,0 +1,1 @@
+{"ds": "fleurs", "lang": "hi_in", "method": "ft", "lr": 1e-05, "wer": 42.77, "trainable_M": 153.58, "peak_gb": 5.6, "train_s": 164, "n_test": 311}

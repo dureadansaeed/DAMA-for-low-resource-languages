@@ -1,0 +1,1 @@
+{"ds": "fleurs", "lang": "cy_gb", "method": "lora", "lr": 0.0005, "wer": 40.87, "trainable_M": 15.34, "peak_gb": 3.12, "train_s": 165, "n_test": 248}

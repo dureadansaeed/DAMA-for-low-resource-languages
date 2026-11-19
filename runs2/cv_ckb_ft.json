@@ -1,0 +1,1 @@
+{"ds": "cv", "lang": "ckb", "method": "ft", "lr": 1e-05, "wer": 53.06, "trainable_M": 153.58, "peak_gb": 4.24, "train_s": 373, "n_test": 787}

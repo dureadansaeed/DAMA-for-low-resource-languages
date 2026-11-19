@@ -1,0 +1,715 @@
+
+=== cv:fy-NL: caching features (12:56) ===
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 15835.92it/s]
+[transformers] The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+  caching train: 640/3916
+  caching train: 1280/3916
+  caching train: 1920/3916
+  caching train: 2560/3916
+  caching train: 3200/3916
+  caching train: 3840/3916
+  caching test: 640/688
+--- [3/20 runs done, 15%] cv:fy-NL dama start 12:56
+  dama step 50/1304 (4%) loss 1.405 elapsed 0.2m, ~4.2m left
+  dama step 100/1304 (8%) loss 1.220 elapsed 0.5m, ~5.8m left
+  dama step 150/1304 (12%) loss 0.856 elapsed 0.7m, ~5.3m left
+  dama step 200/1304 (15%) loss 0.609 elapsed 1.0m, ~5.5m left
+  dama step 250/1304 (19%) loss 0.880 elapsed 1.3m, ~5.6m left
+  dama step 300/1304 (23%) loss 0.755 elapsed 1.5m, ~5.1m left
+  dama step 350/1304 (27%) loss 0.849 elapsed 1.8m, ~5.0m left
+  dama step 400/1304 (31%) loss 0.498 elapsed 2.1m, ~4.6m left
+  dama step 450/1304 (35%) loss 0.736 elapsed 2.4m, ~4.5m left
+  dama step 500/1304 (38%) loss 0.496 elapsed 2.7m, ~4.3m left
+  dama step 550/1304 (42%) loss 0.714 elapsed 2.9m, ~4.0m left
+  dama step 600/1304 (46%) loss 0.683 elapsed 3.2m, ~3.8m left
+  dama step 650/1304 (50%) loss 0.778 elapsed 3.5m, ~3.6m left
+  dama step 700/1304 (54%) loss 0.274 elapsed 3.7m, ~3.2m left
+  dama step 750/1304 (58%) loss 0.194 elapsed 4.1m, ~3.0m left
+  dama step 800/1304 (61%) loss 0.312 elapsed 4.3m, ~2.7m left
+  dama step 850/1304 (65%) loss 0.833 elapsed 4.6m, ~2.5m left
+  dama step 900/1304 (69%) loss 0.517 elapsed 4.9m, ~2.2m left
+  dama step 950/1304 (73%) loss 0.581 elapsed 5.1m, ~1.9m left
+  dama step 1000/1304 (77%) loss 0.358 elapsed 5.3m, ~1.6m left
+  dama step 1050/1304 (81%) loss 0.269 elapsed 5.5m, ~1.3m left
+  dama step 1100/1304 (84%) loss 0.332 elapsed 5.8m, ~1.1m left
+  dama step 1150/1304 (88%) loss 0.280 elapsed 6.1m, ~0.8m left
+  dama step 1200/1304 (92%) loss 0.422 elapsed 6.3m, ~0.5m left
+  dama step 1250/1304 (96%) loss 0.583 elapsed 6.6m, ~0.3m left
+  dama step 1300/1304 (100%) loss 0.556 elapsed 6.9m, ~0.0m left
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer WhisperTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+RESULT {"ds": "cv", "lang": "fy-NL", "method": "dama", "lr": 0.0005, "wer": 33.59, "trainable_M": 43.67, "peak_gb": 2.68, "train_s": 415, "n_test": 688}
+
+=== fleurs:hi_in: caching features (13:07) ===
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 16901.42it/s]
+  caching train: 640/2115
+  caching train: 1280/2115
+  caching train: 1920/2115
+--- [4/20 runs done, 20%] fleurs:hi_in dama start 13:07, overall ETA ~2.8h
+  dama step 50/704 (7%) loss 0.421 elapsed 0.4m, ~4.6m left
+  dama step 100/704 (14%) loss 0.361 elapsed 0.7m, ~4.3m left
+  dama step 150/704 (21%) loss 0.534 elapsed 1.1m, ~3.9m left
+  dama step 200/704 (28%) loss 0.395 elapsed 1.4m, ~3.6m left
+  dama step 250/704 (36%) loss 0.574 elapsed 1.8m, ~3.2m left
+  dama step 300/704 (43%) loss 0.253 elapsed 2.1m, ~2.9m left
+  dama step 350/704 (50%) loss 0.318 elapsed 2.5m, ~2.5m left
+  dama step 400/704 (57%) loss 0.311 elapsed 2.9m, ~2.2m left
+  dama step 450/704 (64%) loss 0.230 elapsed 3.3m, ~1.9m left
+  dama step 500/704 (71%) loss 0.130 elapsed 3.7m, ~1.5m left
+  dama step 550/704 (78%) loss 0.223 elapsed 4.0m, ~1.1m left
+  dama step 600/704 (85%) loss 0.247 elapsed 4.4m, ~0.8m left
+  dama step 650/704 (92%) loss 0.105 elapsed 4.8m, ~0.4m left
+  dama step 700/704 (99%) loss 0.214 elapsed 5.1m, ~0.0m left
+RESULT {"ds": "fleurs", "lang": "hi_in", "method": "dama", "lr": 0.0005, "wer": 41.98, "trainable_M": 3.83, "peak_gb": 4.6, "train_s": 315, "n_test": 311}
+
+=== fleurs:ast_es: caching features (13:18) ===
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 15171.05it/s]
+  caching train: 640/2509
+  caching train: 1280/2509
+  caching train: 1920/2509
+--- [5/20 runs done, 25%] fleurs:ast_es dama start 13:19, overall ETA ~2.8h
+  dama step 50/836 (6%) loss 0.649 elapsed 0.2m, ~3.5m left
+  dama step 100/836 (12%) loss 0.700 elapsed 0.6m, ~4.1m left
+  dama step 150/836 (18%) loss 0.439 elapsed 0.9m, ~4.0m left
+  dama step 200/836 (24%) loss 0.371 elapsed 1.2m, ~3.9m left
+  dama step 250/836 (30%) loss 0.430 elapsed 1.5m, ~3.5m left
+  dama step 300/836 (36%) loss 0.413 elapsed 1.8m, ~3.3m left
+  dama step 350/836 (42%) loss 0.549 elapsed 2.2m, ~3.0m left
+  dama step 400/836 (48%) loss 0.238 elapsed 2.5m, ~2.7m left
+  dama step 450/836 (54%) loss 0.285 elapsed 2.8m, ~2.4m left
+  dama step 500/836 (60%) loss 0.434 elapsed 3.2m, ~2.1m left
+  dama step 550/836 (66%) loss 0.141 elapsed 3.5m, ~1.8m left
+  dama step 600/836 (72%) loss 0.190 elapsed 3.8m, ~1.5m left
+  dama step 650/836 (78%) loss 0.322 elapsed 4.2m, ~1.2m left
+  dama step 700/836 (84%) loss 0.234 elapsed 4.5m, ~0.9m left
+  dama step 750/836 (90%) loss 0.166 elapsed 4.9m, ~0.6m left
+  dama step 800/836 (96%) loss 0.240 elapsed 5.2m, ~0.2m left
+RESULT {"ds": "fleurs", "lang": "ast_es", "method": "dama", "lr": 0.0005, "wer": 23.19, "trainable_M": 43.67, "peak_gb": 3.16, "train_s": 328, "n_test": 396}
+
+=== cv:ckb: caching features (13:29) ===
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 18697.56it/s]
+  caching train: 640/7028
+  caching train: 1280/7028
+  caching train: 1920/7028
+  caching train: 2560/7028
+  caching train: 3200/7028
+  caching train: 3840/7028
+  caching train: 4480/7028
+  caching train: 5120/7028
+  caching train: 5760/7028
+  caching train: 6400/7028
+  caching test: 640/787
+--- [6/20 runs done, 30%] cv:ckb dama start 13:29, overall ETA ~2.5h
+  dama step 50/2342 (2%) loss 0.689 elapsed 0.2m, ~10.1m left
+  dama step 100/2342 (4%) loss 0.459 elapsed 0.4m, ~9.9m left
+  dama step 150/2342 (6%) loss 0.676 elapsed 0.7m, ~10.8m left
+  dama step 200/2342 (9%) loss 0.523 elapsed 0.9m, ~9.7m left
+  dama step 250/2342 (11%) loss 0.638 elapsed 1.1m, ~9.4m left
+  dama step 300/2342 (13%) loss 0.523 elapsed 1.4m, ~9.4m left
+  dama step 350/2342 (15%) loss 0.712 elapsed 1.6m, ~9.1m left
+  dama step 400/2342 (17%) loss 0.459 elapsed 1.8m, ~8.6m left
+  dama step 450/2342 (19%) loss 0.452 elapsed 2.1m, ~8.7m left
+  dama step 500/2342 (21%) loss 0.481 elapsed 2.2m, ~8.3m left
+  dama step 550/2342 (23%) loss 0.640 elapsed 2.4m, ~8.0m left
+  dama step 600/2342 (26%) loss 0.325 elapsed 2.7m, ~7.9m left
+  dama step 650/2342 (28%) loss 0.502 elapsed 2.9m, ~7.6m left
+  dama step 700/2342 (30%) loss 0.530 elapsed 3.1m, ~7.3m left
+  dama step 750/2342 (32%) loss 0.515 elapsed 3.4m, ~7.2m left
+  dama step 800/2342 (34%) loss 0.544 elapsed 3.6m, ~6.9m left
+  dama step 850/2342 (36%) loss 0.591 elapsed 3.8m, ~6.6m left
+  dama step 900/2342 (38%) loss 0.602 elapsed 4.1m, ~6.5m left
+  dama step 950/2342 (41%) loss 0.431 elapsed 4.2m, ~6.2m left
+  dama step 1000/2342 (43%) loss 0.431 elapsed 4.4m, ~6.0m left
+  dama step 1050/2342 (45%) loss 0.380 elapsed 4.7m, ~5.8m left
+  dama step 1100/2342 (47%) loss 0.329 elapsed 4.9m, ~5.6m left
+  dama step 1150/2342 (49%) loss 0.348 elapsed 5.1m, ~5.3m left
+  dama step 1200/2342 (51%) loss 0.277 elapsed 5.4m, ~5.1m left
+  dama step 1250/2342 (53%) loss 0.317 elapsed 5.6m, ~4.9m left
+  dama step 1300/2342 (56%) loss 0.793 elapsed 5.8m, ~4.6m left
+  dama step 1350/2342 (58%) loss 0.423 elapsed 6.1m, ~4.5m left
+  dama step 1400/2342 (60%) loss 0.359 elapsed 6.2m, ~4.2m left
+  dama step 1450/2342 (62%) loss 0.583 elapsed 6.4m, ~4.0m left
+  dama step 1500/2342 (64%) loss 0.414 elapsed 6.7m, ~3.8m left
+  dama step 1550/2342 (66%) loss 0.560 elapsed 6.9m, ~3.5m left
+  dama step 1600/2342 (68%) loss 0.363 elapsed 7.1m, ~3.3m left
+  dama step 1650/2342 (70%) loss 0.307 elapsed 7.4m, ~3.1m left
+  dama step 1700/2342 (73%) loss 0.370 elapsed 7.6m, ~2.9m left
+  dama step 1750/2342 (75%) loss 0.436 elapsed 7.8m, ~2.7m left
+  dama step 1800/2342 (77%) loss 0.471 elapsed 8.2m, ~2.5m left
+  dama step 1850/2342 (79%) loss 0.381 elapsed 8.4m, ~2.2m left
+  dama step 1900/2342 (81%) loss 0.431 elapsed 8.7m, ~2.0m left
+  dama step 1950/2342 (83%) loss 0.542 elapsed 8.9m, ~1.8m left
+  dama step 2000/2342 (85%) loss 0.463 elapsed 9.1m, ~1.6m left
+  dama step 2050/2342 (88%) loss 0.352 elapsed 9.5m, ~1.3m left
+  dama step 2100/2342 (90%) loss 0.450 elapsed 9.7m, ~1.1m left
+  dama step 2150/2342 (92%) loss 0.345 elapsed 9.9m, ~0.9m left
+  dama step 2200/2342 (94%) loss 0.244 elapsed 10.2m, ~0.7m left
+  dama step 2250/2342 (96%) loss 0.359 elapsed 10.5m, ~0.4m left
+  dama step 2300/2342 (98%) loss 0.340 elapsed 10.7m, ~0.2m left
+RESULT {"ds": "cv", "lang": "ckb", "method": "dama", "lr": 0.0005, "wer": 61.21, "trainable_M": 43.67, "peak_gb": 3.21, "train_s": 658, "n_test": 787}
+
+=== fleurs:be_by: caching features (13:48) ===
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 17952.73it/s]
+  caching train: 640/2412
+  caching train: 1280/2412
+  caching train: 1920/2412
+--- [7/20 runs done, 35%] fleurs:be_by dama start 13:48, overall ETA ~2.8h
+  dama step 50/804 (6%) loss 0.955 elapsed 0.2m, ~3.1m left
+  dama step 100/804 (12%) loss 0.671 elapsed 0.5m, ~3.6m left
+  dama step 150/804 (19%) loss 0.835 elapsed 0.8m, ~3.6m left
+  dama step 200/804 (25%) loss 0.342 elapsed 1.1m, ~3.4m left
+  dama step 250/804 (31%) loss 0.475 elapsed 1.4m, ~3.2m left
+  dama step 300/804 (37%) loss 0.422 elapsed 1.7m, ~2.9m left
+  dama step 350/804 (44%) loss 0.345 elapsed 2.0m, ~2.6m left
+  dama step 400/804 (50%) loss 0.316 elapsed 2.3m, ~2.4m left
+  dama step 450/804 (56%) loss 0.161 elapsed 2.7m, ~2.1m left
+  dama step 500/804 (62%) loss 0.306 elapsed 3.0m, ~1.8m left
+  dama step 550/804 (68%) loss 0.371 elapsed 3.3m, ~1.5m left
+  dama step 600/804 (75%) loss 0.231 elapsed 3.6m, ~1.2m left
+  dama step 650/804 (81%) loss 0.202 elapsed 3.9m, ~0.9m left
+  dama step 700/804 (87%) loss 0.321 elapsed 4.2m, ~0.6m left
+  dama step 750/804 (93%) loss 0.245 elapsed 4.5m, ~0.3m left
+  dama step 800/804 (100%) loss 0.176 elapsed 4.8m, ~0.0m left
+RESULT {"ds": "fleurs", "lang": "be_by", "method": "dama", "lr": 0.0005, "wer": 29.08, "trainable_M": 3.83, "peak_gb": 3.23, "train_s": 296, "n_test": 244}
+
+=== fleurs:ckb_iq: caching features (13:57) ===
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 15646.98it/s]
+  caching train: 640/2928
+  caching train: 1280/2928
+  caching train: 1920/2928
+  caching train: 2560/2928
+--- [8/20 runs done, 40%] fleurs:ckb_iq dama start 13:57, overall ETA ~2.4h
+  dama step 50/976 (5%) loss 0.645 elapsed 0.3m, ~4.7m left
+  dama step 100/976 (10%) loss 0.522 elapsed 0.6m, ~5.5m left
+  dama step 150/976 (15%) loss 0.493 elapsed 1.0m, ~5.5m left
+  dama step 200/976 (20%) loss 0.388 elapsed 1.4m, ~5.4m left
+  dama step 250/976 (26%) loss 0.479 elapsed 1.8m, ~5.1m left
+  dama step 300/976 (31%) loss 0.347 elapsed 2.0m, ~4.5m left
+  dama step 350/976 (36%) loss 0.400 elapsed 2.4m, ~4.3m left
+  dama step 400/976 (41%) loss 0.442 elapsed 2.8m, ~4.0m left
+  dama step 450/976 (46%) loss 0.426 elapsed 3.1m, ~3.7m left
+  dama step 500/976 (51%) loss 0.317 elapsed 3.5m, ~3.3m left
+  dama step 550/976 (56%) loss 0.194 elapsed 3.9m, ~3.0m left
+  dama step 600/976 (61%) loss 0.186 elapsed 4.1m, ~2.6m left
+  dama step 650/976 (67%) loss 0.314 elapsed 4.5m, ~2.3m left
+  dama step 700/976 (72%) loss 0.355 elapsed 4.9m, ~1.9m left
+  dama step 750/976 (77%) loss 0.243 elapsed 5.3m, ~1.6m left
+  dama step 800/976 (82%) loss 0.298 elapsed 5.6m, ~1.2m left
+  dama step 850/976 (87%) loss 0.206 elapsed 5.9m, ~0.9m left
+  dama step 900/976 (92%) loss 0.309 elapsed 6.3m, ~0.5m left
+  dama step 950/976 (97%) loss 0.193 elapsed 6.7m, ~0.2m left
+RESULT {"ds": "fleurs", "lang": "ckb_iq", "method": "dama", "lr": 0.0005, "wer": 59.14, "trainable_M": 43.67, "peak_gb": 4.74, "train_s": 415, "n_test": 311}
+
+=== cv:rw: caching features (14:10) ===
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 19606.63it/s]
+  caching train: 640/7075
+  caching train: 1280/7075
+  caching train: 1920/7075
+  caching train: 2560/7075
+  caching train: 3200/7075
+  caching train: 3840/7075
+  caching train: 4480/7075
+  caching train: 5120/7075
+  caching train: 5760/7075
+  caching train: 6400/7075
+  caching train: 7040/7075
+  caching test: 640/656
+--- [9/20 runs done, 45%] cv:rw dama start 14:10, overall ETA ~2.2h
+  dama step 50/2358 (2%) loss 1.997 elapsed 0.2m, ~9.9m left
+  dama step 100/2358 (4%) loss 1.399 elapsed 0.4m, ~9.7m left
+  dama step 150/2358 (6%) loss 1.493 elapsed 0.8m, ~11.1m left
+  dama step 200/2358 (8%) loss 1.354 elapsed 1.0m, ~10.4m left
+  dama step 250/2358 (11%) loss 1.340 elapsed 1.2m, ~10.0m left
+  dama step 300/2358 (13%) loss 1.610 elapsed 1.5m, ~10.3m left
+  dama step 350/2358 (15%) loss 1.369 elapsed 1.7m, ~9.9m left
+  dama step 400/2358 (17%) loss 1.366 elapsed 1.9m, ~9.5m left
+  dama step 450/2358 (19%) loss 1.481 elapsed 2.2m, ~9.5m left
+  dama step 500/2358 (21%) loss 1.381 elapsed 2.4m, ~9.0m left
+  dama step 550/2358 (23%) loss 1.389 elapsed 2.6m, ~8.7m left
+  dama step 600/2358 (25%) loss 1.234 elapsed 3.0m, ~8.7m left
+  dama step 650/2358 (28%) loss 1.558 elapsed 3.2m, ~8.3m left
+  dama step 700/2358 (30%) loss 1.029 elapsed 3.4m, ~8.0m left
+  dama step 750/2358 (32%) loss 1.453 elapsed 3.7m, ~8.0m left
+  dama step 800/2358 (34%) loss 0.967 elapsed 3.9m, ~7.7m left
+  dama step 850/2358 (36%) loss 1.255 elapsed 4.1m, ~7.4m left
+  dama step 900/2358 (38%) loss 1.549 elapsed 4.5m, ~7.2m left
+  dama step 950/2358 (40%) loss 1.638 elapsed 4.7m, ~6.9m left
+  dama step 1000/2358 (42%) loss 1.476 elapsed 4.9m, ~6.7m left
+  dama step 1050/2358 (45%) loss 1.123 elapsed 5.2m, ~6.5m left
+  dama step 1100/2358 (47%) loss 1.348 elapsed 5.4m, ~6.2m left
+  dama step 1150/2358 (49%) loss 1.265 elapsed 5.7m, ~5.9m left
+  dama step 1200/2358 (51%) loss 0.667 elapsed 6.0m, ~5.8m left
+  dama step 1250/2358 (53%) loss 1.715 elapsed 6.2m, ~5.5m left
+  dama step 1300/2358 (55%) loss 1.032 elapsed 6.4m, ~5.2m left
+  dama step 1350/2358 (57%) loss 0.769 elapsed 6.7m, ~5.0m left
+  dama step 1400/2358 (59%) loss 0.867 elapsed 7.0m, ~4.8m left
+  dama step 1450/2358 (61%) loss 1.638 elapsed 7.2m, ~4.5m left
+  dama step 1500/2358 (64%) loss 1.010 elapsed 7.5m, ~4.3m left
+  dama step 1550/2358 (66%) loss 0.956 elapsed 7.7m, ~4.0m left
+  dama step 1600/2358 (68%) loss 1.106 elapsed 7.9m, ~3.8m left
+  dama step 1650/2358 (70%) loss 1.155 elapsed 8.3m, ~3.5m left
+  dama step 1700/2358 (72%) loss 1.214 elapsed 8.5m, ~3.3m left
+  dama step 1750/2358 (74%) loss 1.062 elapsed 8.7m, ~3.0m left
+  dama step 1800/2358 (76%) loss 0.876 elapsed 9.0m, ~2.8m left
+  dama step 1850/2358 (78%) loss 1.080 elapsed 9.2m, ~2.5m left
+  dama step 1900/2358 (81%) loss 1.224 elapsed 9.5m, ~2.3m left
+  dama step 1950/2358 (83%) loss 1.323 elapsed 9.8m, ~2.0m left
+  dama step 2000/2358 (85%) loss 1.306 elapsed 10.0m, ~1.8m left
+  dama step 2050/2358 (87%) loss 0.787 elapsed 10.2m, ~1.5m left
+  dama step 2100/2358 (89%) loss 1.696 elapsed 10.5m, ~1.3m left
+  dama step 2150/2358 (91%) loss 1.048 elapsed 10.7m, ~1.0m left
+  dama step 2200/2358 (93%) loss 0.829 elapsed 11.0m, ~0.8m left
+  dama step 2250/2358 (95%) loss 0.988 elapsed 11.3m, ~0.5m left
+  dama step 2300/2358 (98%) loss 1.010 elapsed 11.5m, ~0.3m left
+  dama step 2350/2358 (100%) loss 0.562 elapsed 11.7m, ~0.0m left
+RESULT {"ds": "cv", "lang": "rw", "method": "dama", "lr": 0.0005, "wer": 74.99, "trainable_M": 43.67, "peak_gb": 2.81, "train_s": 711, "n_test": 656}
+
+=== cv:eo: caching features (14:26) ===
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 17336.92it/s]
+  caching train: 640/5640
+  caching train: 1280/5640
+  caching train: 1920/5640
+  caching train: 2560/5640
+  caching train: 3200/5640
+  caching train: 3840/5640
+  caching train: 4480/5640
+  caching train: 5120/5640
+--- [10/20 runs done, 50%] cv:eo dama start 14:27, overall ETA ~2.1h
+  dama step 50/1880 (3%) loss 0.619 elapsed 0.2m, ~5.6m left
+  dama step 100/1880 (5%) loss 0.582 elapsed 0.3m, ~5.4m left
+  dama step 150/1880 (8%) loss 0.471 elapsed 0.5m, ~6.2m left
+  dama step 200/1880 (11%) loss 0.478 elapsed 0.7m, ~5.9m left
+  dama step 250/1880 (13%) loss 0.832 elapsed 0.9m, ~6.2m left
+  dama step 300/1880 (16%) loss 0.689 elapsed 1.1m, ~5.8m left
+  dama step 350/1880 (19%) loss 0.472 elapsed 1.3m, ~5.5m left
+  dama step 400/1880 (21%) loss 0.580 elapsed 1.5m, ~5.5m left
+  dama step 450/1880 (24%) loss 0.517 elapsed 1.7m, ~5.3m left
+  dama step 500/1880 (27%) loss 0.540 elapsed 1.9m, ~5.2m left
+  dama step 550/1880 (29%) loss 0.314 elapsed 2.1m, ~5.0m left
+  dama step 600/1880 (32%) loss 0.382 elapsed 2.3m, ~4.9m left
+  dama step 650/1880 (35%) loss 0.443 elapsed 2.4m, ~4.6m left
+  dama step 700/1880 (37%) loss 0.361 elapsed 2.6m, ~4.4m left
+  dama step 750/1880 (40%) loss 0.422 elapsed 2.9m, ~4.3m left
+  dama step 800/1880 (43%) loss 0.524 elapsed 3.0m, ~4.1m left
+  dama step 850/1880 (45%) loss 0.243 elapsed 3.2m, ~3.9m left
+  dama step 900/1880 (48%) loss 0.265 elapsed 3.4m, ~3.7m left
+  dama step 950/1880 (51%) loss 0.250 elapsed 3.6m, ~3.6m left
+  dama step 1000/1880 (53%) loss 0.333 elapsed 3.8m, ~3.3m left
+  dama step 1050/1880 (56%) loss 0.217 elapsed 4.0m, ~3.1m left
+  dama step 1100/1880 (59%) loss 0.124 elapsed 4.2m, ~3.0m left
+  dama step 1150/1880 (61%) loss 0.169 elapsed 4.3m, ~2.8m left
+  dama step 1200/1880 (64%) loss 0.306 elapsed 4.6m, ~2.6m left
+  dama step 1250/1880 (66%) loss 0.312 elapsed 4.8m, ~2.4m left
+  dama step 1300/1880 (69%) loss 0.176 elapsed 5.0m, ~2.2m left
+  dama step 1350/1880 (72%) loss 0.207 elapsed 5.1m, ~2.0m left
+  dama step 1400/1880 (74%) loss 0.241 elapsed 5.3m, ~1.8m left
+  dama step 1450/1880 (77%) loss 0.232 elapsed 5.6m, ~1.6m left
+  dama step 1500/1880 (80%) loss 0.203 elapsed 5.7m, ~1.4m left
+  dama step 1550/1880 (82%) loss 0.248 elapsed 5.9m, ~1.3m left
+  dama step 1600/1880 (85%) loss 0.105 elapsed 6.1m, ~1.1m left
+  dama step 1650/1880 (88%) loss 0.278 elapsed 6.3m, ~0.9m left
+  dama step 1700/1880 (90%) loss 0.220 elapsed 6.5m, ~0.7m left
+  dama step 1750/1880 (93%) loss 0.309 elapsed 6.7m, ~0.5m left
+  dama step 1800/1880 (96%) loss 0.202 elapsed 6.9m, ~0.3m left
+  dama step 1850/1880 (98%) loss 0.257 elapsed 7.0m, ~0.1m left
+RESULT {"ds": "cv", "lang": "eo", "method": "dama", "lr": 0.0005, "wer": 20.35, "trainable_M": 43.67, "peak_gb": 2.69, "train_s": 434, "n_test": 578}
+
+=== cv:kab: caching features (14:36) ===
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 15752.61it/s]
+  caching train: 640/10528
+  caching train: 1280/10528
+  caching train: 1920/10528
+  caching train: 2560/10528
+  caching train: 3200/10528
+  caching train: 3840/10528
+  caching train: 4480/10528
+  caching train: 5120/10528
+  caching train: 5760/10528
+  caching train: 6400/10528
+  caching train: 7040/10528
+  caching train: 7680/10528
+  caching train: 8320/10528
+  caching train: 8960/10528
+  caching train: 9600/10528
+  caching train: 10240/10528
+  caching test: 640/943
+--- [11/20 runs done, 55%] cv:kab dama start 14:37, overall ETA ~1.8h
+  dama step 50/3508 (1%) loss 2.348 elapsed 0.2m, ~11.8m left
+  dama step 100/3508 (3%) loss 1.780 elapsed 0.3m, ~11.0m left
+  dama step 150/3508 (4%) loss 1.875 elapsed 0.5m, ~10.6m left
+  dama step 200/3508 (6%) loss 1.621 elapsed 0.6m, ~10.4m left
+  dama step 250/3508 (7%) loss 1.301 elapsed 0.9m, ~11.1m left
+  dama step 300/3508 (9%) loss 1.196 elapsed 1.0m, ~11.1m left
+  dama step 350/3508 (10%) loss 1.343 elapsed 1.2m, ~11.2m left
+  dama step 400/3508 (11%) loss 1.351 elapsed 1.5m, ~11.3m left
+  dama step 450/3508 (13%) loss 1.240 elapsed 1.8m, ~12.0m left
+  dama step 500/3508 (14%) loss 1.005 elapsed 2.0m, ~11.9m left
+  dama step 550/3508 (16%) loss 1.150 elapsed 2.2m, ~11.8m left
+  dama step 600/3508 (17%) loss 1.011 elapsed 2.4m, ~11.7m left
+  dama step 650/3508 (19%) loss 0.919 elapsed 2.6m, ~11.5m left
+  dama step 700/3508 (20%) loss 1.330 elapsed 2.9m, ~11.8m left
+  dama step 750/3508 (21%) loss 1.433 elapsed 3.2m, ~11.6m left
+  dama step 800/3508 (23%) loss 1.477 elapsed 3.4m, ~11.4m left
+  dama step 850/3508 (24%) loss 0.947 elapsed 3.6m, ~11.2m left
+  dama step 900/3508 (26%) loss 1.273 elapsed 3.9m, ~11.3m left
+  dama step 950/3508 (27%) loss 0.803 elapsed 4.1m, ~11.1m left
+  dama step 1000/3508 (29%) loss 1.223 elapsed 4.3m, ~10.9m left
+  dama step 1050/3508 (30%) loss 0.846 elapsed 4.5m, ~10.6m left
+  dama step 1100/3508 (31%) loss 0.840 elapsed 4.9m, ~10.6m left
+  dama step 1150/3508 (33%) loss 1.077 elapsed 5.1m, ~10.4m left
+  dama step 1200/3508 (34%) loss 0.711 elapsed 5.3m, ~10.2m left
+  dama step 1250/3508 (36%) loss 1.168 elapsed 5.5m, ~9.9m left
+  dama step 1300/3508 (37%) loss 0.989 elapsed 5.7m, ~9.7m left
+  dama step 1350/3508 (38%) loss 0.942 elapsed 6.0m, ~9.6m left
+  dama step 1400/3508 (40%) loss 0.843 elapsed 6.2m, ~9.4m left
+  dama step 1450/3508 (41%) loss 0.797 elapsed 6.5m, ~9.2m left
+  dama step 1500/3508 (43%) loss 0.977 elapsed 6.6m, ~8.8m left
+  dama step 1550/3508 (44%) loss 0.845 elapsed 6.7m, ~8.5m left
+  dama step 1600/3508 (46%) loss 1.382 elapsed 6.9m, ~8.2m left
+  dama step 1650/3508 (47%) loss 1.156 elapsed 7.1m, ~8.0m left
+  dama step 1700/3508 (48%) loss 1.078 elapsed 7.3m, ~7.8m left
+  dama step 1750/3508 (50%) loss 0.836 elapsed 7.5m, ~7.6m left
+  dama step 1800/3508 (51%) loss 1.026 elapsed 7.9m, ~7.5m left
+  dama step 1850/3508 (53%) loss 0.626 elapsed 8.1m, ~7.2m left
+  dama step 1900/3508 (54%) loss 0.816 elapsed 8.3m, ~7.0m left
+  dama step 1950/3508 (56%) loss 0.619 elapsed 8.5m, ~6.8m left
+  dama step 2000/3508 (57%) loss 0.835 elapsed 8.8m, ~6.6m left
+  dama step 2050/3508 (58%) loss 0.784 elapsed 9.0m, ~6.4m left
+  dama step 2100/3508 (60%) loss 0.781 elapsed 9.2m, ~6.2m left
+  dama step 2150/3508 (61%) loss 1.023 elapsed 9.4m, ~5.9m left
+  dama step 2200/3508 (63%) loss 1.105 elapsed 9.7m, ~5.8m left
+  dama step 2250/3508 (64%) loss 0.965 elapsed 9.9m, ~5.5m left
+  dama step 2300/3508 (66%) loss 0.808 elapsed 10.1m, ~5.3m left
+  dama step 2350/3508 (67%) loss 0.854 elapsed 10.3m, ~5.1m left
+  dama step 2400/3508 (68%) loss 1.009 elapsed 10.5m, ~4.8m left
+  dama step 2450/3508 (70%) loss 1.089 elapsed 10.8m, ~4.7m left
+  dama step 2500/3508 (71%) loss 0.785 elapsed 11.0m, ~4.4m left
+  dama step 2550/3508 (73%) loss 0.491 elapsed 11.2m, ~4.2m left
+  dama step 2600/3508 (74%) loss 0.917 elapsed 11.4m, ~4.0m left
+  dama step 2650/3508 (76%) loss 0.396 elapsed 11.7m, ~3.8m left
+  dama step 2700/3508 (77%) loss 0.632 elapsed 11.9m, ~3.6m left
+  dama step 2750/3508 (78%) loss 0.940 elapsed 12.1m, ~3.3m left
+  dama step 2800/3508 (80%) loss 0.693 elapsed 12.3m, ~3.1m left
+  dama step 2850/3508 (81%) loss 0.816 elapsed 12.6m, ~2.9m left
+  dama step 2900/3508 (83%) loss 0.596 elapsed 12.8m, ~2.7m left
+  dama step 2950/3508 (84%) loss 0.683 elapsed 13.0m, ~2.5m left
+  dama step 3000/3508 (86%) loss 0.438 elapsed 13.2m, ~2.2m left
+  dama step 3050/3508 (87%) loss 0.878 elapsed 13.4m, ~2.0m left
+  dama step 3100/3508 (88%) loss 0.599 elapsed 13.7m, ~1.8m left
+  dama step 3150/3508 (90%) loss 0.590 elapsed 13.9m, ~1.6m left
+  dama step 3200/3508 (91%) loss 0.549 elapsed 14.2m, ~1.4m left
+  dama step 3250/3508 (93%) loss 0.722 elapsed 14.4m, ~1.1m left
+  dama step 3300/3508 (94%) loss 0.596 elapsed 14.7m, ~0.9m left
+  dama step 3350/3508 (95%) loss 0.461 elapsed 14.9m, ~0.7m left
+  dama step 3400/3508 (97%) loss 0.707 elapsed 15.1m, ~0.5m left
+  dama step 3450/3508 (98%) loss 0.580 elapsed 15.3m, ~0.3m left
+  dama step 3500/3508 (100%) loss 0.601 elapsed 15.5m, ~0.0m left
+RESULT {"ds": "cv", "lang": "kab", "method": "dama", "lr": 0.0005, "wer": 74.01, "trainable_M": 43.67, "peak_gb": 2.91, "train_s": 936, "n_test": 943}
+
+=== cv:lg: caching features (14:57) ===
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 16109.17it/s]
+  caching train: 640/6004
+  caching train: 1280/6004
+  caching train: 1920/6004
+  caching train: 2560/6004
+  caching train: 3200/6004
+  caching train: 3840/6004
+  caching train: 4480/6004
+  caching train: 5120/6004
+  caching train: 5760/6004
+--- [12/20 runs done, 60%] cv:lg dama start 14:57, overall ETA ~1.8h
+  dama step 50/2000 (2%) loss 1.049 elapsed 0.2m, ~8.4m left
+  dama step 100/2000 (5%) loss 1.545 elapsed 0.4m, ~8.2m left
+  dama step 150/2000 (8%) loss 1.353 elapsed 0.8m, ~9.3m left
+  dama step 200/2000 (10%) loss 0.931 elapsed 1.0m, ~8.8m left
+  dama step 250/2000 (12%) loss 0.986 elapsed 1.2m, ~8.3m left
+  dama step 300/2000 (15%) loss 0.810 elapsed 1.5m, ~8.6m left
+  dama step 350/2000 (18%) loss 0.847 elapsed 1.7m, ~8.2m left
+  dama step 400/2000 (20%) loss 0.955 elapsed 2.1m, ~8.2m left
+  dama step 450/2000 (22%) loss 0.892 elapsed 2.3m, ~7.8m left
+  dama step 500/2000 (25%) loss 0.929 elapsed 2.5m, ~7.4m left
+  dama step 550/2000 (28%) loss 0.941 elapsed 2.8m, ~7.4m left
+  dama step 600/2000 (30%) loss 0.835 elapsed 3.0m, ~7.0m left
+  dama step 650/2000 (32%) loss 0.745 elapsed 3.3m, ~6.9m left
+  dama step 700/2000 (35%) loss 0.789 elapsed 3.6m, ~6.6m left
+  dama step 750/2000 (38%) loss 0.934 elapsed 3.8m, ~6.3m left
+  dama step 800/2000 (40%) loss 0.683 elapsed 4.1m, ~6.2m left
+  dama step 850/2000 (42%) loss 0.632 elapsed 4.3m, ~5.8m left
+  dama step 900/2000 (45%) loss 0.974 elapsed 4.6m, ~5.7m left
+  dama step 950/2000 (48%) loss 0.641 elapsed 4.9m, ~5.4m left
+  dama step 1000/2000 (50%) loss 0.712 elapsed 5.1m, ~5.1m left
+  dama step 1050/2000 (52%) loss 0.437 elapsed 5.4m, ~4.9m left
+  dama step 1100/2000 (55%) loss 0.497 elapsed 5.6m, ~4.6m left
+  dama step 1150/2000 (58%) loss 0.699 elapsed 6.0m, ~4.4m left
+  dama step 1200/2000 (60%) loss 0.616 elapsed 6.2m, ~4.1m left
+  dama step 1250/2000 (62%) loss 0.752 elapsed 6.4m, ~3.8m left
+  dama step 1300/2000 (65%) loss 0.389 elapsed 6.7m, ~3.6m left
+  dama step 1350/2000 (68%) loss 0.456 elapsed 6.9m, ~3.3m left
+  dama step 1400/2000 (70%) loss 0.408 elapsed 7.3m, ~3.1m left
+  dama step 1450/2000 (72%) loss 0.551 elapsed 7.5m, ~2.8m left
+  dama step 1500/2000 (75%) loss 0.551 elapsed 7.7m, ~2.6m left
+  dama step 1550/2000 (78%) loss 0.698 elapsed 8.0m, ~2.3m left
+  dama step 1600/2000 (80%) loss 0.644 elapsed 8.2m, ~2.1m left
+  dama step 1650/2000 (82%) loss 0.711 elapsed 8.6m, ~1.8m left
+  dama step 1700/2000 (85%) loss 0.420 elapsed 8.8m, ~1.6m left
+  dama step 1750/2000 (88%) loss 0.451 elapsed 9.0m, ~1.3m left
+  dama step 1800/2000 (90%) loss 0.526 elapsed 9.3m, ~1.0m left
+  dama step 1850/2000 (92%) loss 0.438 elapsed 9.5m, ~0.8m left
+  dama step 1900/2000 (95%) loss 1.072 elapsed 9.9m, ~0.5m left
+  dama step 1950/2000 (98%) loss 0.520 elapsed 10.1m, ~0.3m left
+  dama step 2000/2000 (100%) loss 0.597 elapsed 10.3m, ~0.0m left
+RESULT {"ds": "cv", "lang": "lg", "method": "dama", "lr": 0.0005, "wer": 62.56, "trainable_M": 43.67, "peak_gb": 2.8, "train_s": 625, "n_test": 606}
+
+=== cv:mhr: caching features (15:12) ===
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 16127.67it/s]
+  caching train: 640/7756
+  caching train: 1280/7756
+  caching train: 1920/7756
+  caching train: 2560/7756
+  caching train: 3200/7756
+  caching train: 3840/7756
+  caching train: 4480/7756
+  caching train: 5120/7756
+  caching train: 5760/7756
+  caching train: 6400/7756
+  caching train: 7040/7756
+  caching train: 7680/7756
+  caching test: 640/743
+--- [13/20 runs done, 65%] cv:mhr dama start 15:12, overall ETA ~1.6h
+  dama step 50/2584 (2%) loss 0.749 elapsed 0.2m, ~11.1m left
+  dama step 100/2584 (4%) loss 0.650 elapsed 0.4m, ~10.8m left
+  dama step 150/2584 (6%) loss 0.620 elapsed 0.7m, ~10.6m left
+  dama step 200/2584 (8%) loss 0.784 elapsed 1.0m, ~11.7m left
+  dama step 250/2584 (10%) loss 0.788 elapsed 1.2m, ~11.2m left
+  dama step 300/2584 (12%) loss 0.508 elapsed 1.4m, ~10.8m left
+  dama step 350/2584 (14%) loss 0.518 elapsed 1.7m, ~11.1m left
+  dama step 400/2584 (15%) loss 0.546 elapsed 2.0m, ~10.7m left
+  dama step 450/2584 (17%) loss 0.604 elapsed 2.2m, ~10.4m left
+  dama step 500/2584 (19%) loss 0.408 elapsed 2.5m, ~10.5m left
+  dama step 550/2584 (21%) loss 0.597 elapsed 2.7m, ~10.1m left
+  dama step 600/2584 (23%) loss 0.324 elapsed 2.9m, ~9.8m left
+  dama step 650/2584 (25%) loss 0.394 elapsed 3.3m, ~9.7m left
+  dama step 700/2584 (27%) loss 0.526 elapsed 3.5m, ~9.4m left
+  dama step 750/2584 (29%) loss 0.437 elapsed 3.7m, ~9.1m left
+  dama step 800/2584 (31%) loss 0.358 elapsed 3.9m, ~8.8m left
+  dama step 850/2584 (33%) loss 0.387 elapsed 4.3m, ~8.7m left
+  dama step 900/2584 (35%) loss 0.534 elapsed 4.5m, ~8.4m left
+  dama step 950/2584 (37%) loss 0.556 elapsed 4.7m, ~8.1m left
+  dama step 1000/2584 (39%) loss 0.489 elapsed 5.0m, ~8.0m left
+  dama step 1050/2584 (41%) loss 0.449 elapsed 5.2m, ~7.7m left
+  dama step 1100/2584 (43%) loss 0.342 elapsed 5.5m, ~7.4m left
+  dama step 1150/2584 (45%) loss 0.396 elapsed 5.8m, ~7.2m left
+  dama step 1200/2584 (46%) loss 0.377 elapsed 6.0m, ~6.9m left
+  dama step 1250/2584 (48%) loss 0.403 elapsed 6.2m, ~6.6m left
+  dama step 1300/2584 (50%) loss 0.355 elapsed 6.6m, ~6.5m left
+  dama step 1350/2584 (52%) loss 0.219 elapsed 6.8m, ~6.2m left
+  dama step 1400/2584 (54%) loss 0.404 elapsed 7.0m, ~5.9m left
+  dama step 1450/2584 (56%) loss 0.339 elapsed 7.3m, ~5.7m left
+  dama step 1500/2584 (58%) loss 0.433 elapsed 7.5m, ~5.4m left
+  dama step 1550/2584 (60%) loss 0.377 elapsed 7.8m, ~5.2m left
+  dama step 1600/2584 (62%) loss 0.335 elapsed 8.0m, ~4.9m left
+  dama step 1650/2584 (64%) loss 0.418 elapsed 8.3m, ~4.7m left
+  dama step 1700/2584 (66%) loss 0.368 elapsed 8.5m, ~4.4m left
+  dama step 1750/2584 (68%) loss 0.326 elapsed 8.7m, ~4.2m left
+  dama step 1800/2584 (70%) loss 0.504 elapsed 9.1m, ~3.9m left
+  dama step 1850/2584 (72%) loss 0.362 elapsed 9.3m, ~3.7m left
+  dama step 1900/2584 (74%) loss 0.254 elapsed 9.5m, ~3.4m left
+  dama step 1950/2584 (75%) loss 0.390 elapsed 9.8m, ~3.2m left
+  dama step 2000/2584 (77%) loss 0.468 elapsed 10.0m, ~2.9m left
+  dama step 2050/2584 (79%) loss 0.337 elapsed 10.2m, ~2.7m left
+  dama step 2100/2584 (81%) loss 0.305 elapsed 10.5m, ~2.4m left
+  dama step 2150/2584 (83%) loss 0.296 elapsed 10.6m, ~2.1m left
+  dama step 2200/2584 (85%) loss 0.243 elapsed 10.8m, ~1.9m left
+  dama step 2250/2584 (87%) loss 0.303 elapsed 11.0m, ~1.6m left
+  dama step 2300/2584 (89%) loss 0.278 elapsed 11.2m, ~1.4m left
+  dama step 2350/2584 (91%) loss 0.217 elapsed 11.4m, ~1.1m left
+  dama step 2400/2584 (93%) loss 0.352 elapsed 11.5m, ~0.9m left
+  dama step 2450/2584 (95%) loss 0.240 elapsed 11.8m, ~0.6m left
+  dama step 2500/2584 (97%) loss 0.243 elapsed 11.9m, ~0.4m left
+  dama step 2550/2584 (99%) loss 0.376 elapsed 12.1m, ~0.2m left
+RESULT {"ds": "cv", "lang": "mhr", "method": "dama", "lr": 0.0005, "wer": 36.52, "trainable_M": 43.67, "peak_gb": 2.97, "train_s": 735, "n_test": 743}
+
+=== cv:ab: caching features (15:29) ===
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 16559.83it/s]
+  caching train: 640/6485
+  caching train: 1280/6485
+  caching train: 1920/6485
+  caching train: 2560/6485
+  caching train: 3200/6485
+  caching train: 3840/6485
+  caching train: 4480/6485
+  caching train: 5120/6485
+  caching train: 5760/6485
+  caching train: 6400/6485
+  caching test: 640/690
+--- [14/20 runs done, 70%] cv:ab dama start 15:29, overall ETA ~1.4h
+  dama step 50/2160 (2%) loss 0.961 elapsed 0.2m, ~6.6m left
+  dama step 100/2160 (5%) loss 0.968 elapsed 0.3m, ~6.5m left
+  dama step 150/2160 (7%) loss 0.728 elapsed 0.5m, ~7.3m left
+  dama step 200/2160 (9%) loss 0.815 elapsed 0.7m, ~7.0m left
+  dama step 250/2160 (12%) loss 0.679 elapsed 0.9m, ~6.9m left
+  dama step 300/2160 (14%) loss 0.749 elapsed 1.1m, ~7.0m left
+  dama step 350/2160 (16%) loss 0.600 elapsed 1.3m, ~6.7m left
+  dama step 400/2160 (19%) loss 0.695 elapsed 1.4m, ~6.4m left
+  dama step 450/2160 (21%) loss 0.611 elapsed 1.7m, ~6.4m left
+  dama step 500/2160 (23%) loss 0.638 elapsed 1.9m, ~6.2m left
+  dama step 550/2160 (25%) loss 0.627 elapsed 2.1m, ~6.2m left
+  dama step 600/2160 (28%) loss 0.750 elapsed 2.3m, ~5.9m left
+  dama step 650/2160 (30%) loss 0.686 elapsed 2.4m, ~5.6m left
+  dama step 700/2160 (32%) loss 0.526 elapsed 2.7m, ~5.5m left
+  dama step 750/2160 (35%) loss 0.915 elapsed 2.8m, ~5.3m left
+  dama step 800/2160 (37%) loss 0.544 elapsed 3.0m, ~5.1m left
+  dama step 850/2160 (39%) loss 0.521 elapsed 3.2m, ~5.0m left
+  dama step 900/2160 (42%) loss 0.702 elapsed 3.4m, ~4.8m left
+  dama step 950/2160 (44%) loss 0.824 elapsed 3.6m, ~4.6m left
+  dama step 1000/2160 (46%) loss 0.617 elapsed 3.8m, ~4.4m left
+  dama step 1050/2160 (49%) loss 0.485 elapsed 4.0m, ~4.2m left
+  dama step 1100/2160 (51%) loss 0.399 elapsed 4.2m, ~4.1m left
+  dama step 1150/2160 (53%) loss 0.580 elapsed 4.4m, ~3.8m left
+  dama step 1200/2160 (56%) loss 0.304 elapsed 4.5m, ~3.6m left
+  dama step 1250/2160 (58%) loss 0.326 elapsed 4.8m, ~3.5m left
+  dama step 1300/2160 (60%) loss 0.428 elapsed 5.0m, ~3.3m left
+  dama step 1350/2160 (62%) loss 0.337 elapsed 5.1m, ~3.1m left
+  dama step 1400/2160 (65%) loss 0.365 elapsed 5.4m, ~2.9m left
+  dama step 1450/2160 (67%) loss 0.428 elapsed 5.5m, ~2.7m left
+  dama step 1500/2160 (69%) loss 0.346 elapsed 5.7m, ~2.5m left
+  dama step 1550/2160 (72%) loss 0.285 elapsed 5.9m, ~2.3m left
+  dama step 1600/2160 (74%) loss 0.491 elapsed 6.1m, ~2.1m left
+  dama step 1650/2160 (76%) loss 0.381 elapsed 6.3m, ~2.0m left
+  dama step 1700/2160 (79%) loss 0.358 elapsed 6.5m, ~1.8m left
+  dama step 1750/2160 (81%) loss 0.342 elapsed 6.6m, ~1.6m left
+  dama step 1800/2160 (83%) loss 0.230 elapsed 6.9m, ~1.4m left
+  dama step 1850/2160 (86%) loss 0.441 elapsed 7.1m, ~1.2m left
+  dama step 1900/2160 (88%) loss 0.239 elapsed 7.3m, ~1.0m left
+  dama step 1950/2160 (90%) loss 0.291 elapsed 7.5m, ~0.8m left
+  dama step 2000/2160 (93%) loss 0.414 elapsed 7.6m, ~0.6m left
+  dama step 2050/2160 (95%) loss 0.392 elapsed 7.9m, ~0.4m left
+  dama step 2100/2160 (97%) loss 0.232 elapsed 8.0m, ~0.2m left
+  dama step 2150/2160 (100%) loss 0.282 elapsed 8.2m, ~0.0m left
+RESULT {"ds": "cv", "lang": "ab", "method": "dama", "lr": 0.0005, "wer": 64.33, "trainable_M": 43.67, "peak_gb": 3.04, "train_s": 499, "n_test": 690}
+
+=== fleurs:cy_gb: caching features (15:45) ===
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 16502.97it/s]
+  caching train: 640/2918
+  caching train: 1280/2918
+  caching train: 1920/2918
+  caching train: 2560/2918
+--- [15/20 runs done, 75%] fleurs:cy_gb dama start 15:45, overall ETA ~1.1h
+  dama step 50/972 (5%) loss 1.593 elapsed 0.2m, ~3.6m left
+  dama step 100/972 (10%) loss 2.330 elapsed 0.5m, ~4.2m left
+  dama step 150/972 (15%) loss 1.883 elapsed 0.8m, ~4.3m left
+  dama step 200/972 (21%) loss 1.610 elapsed 1.1m, ~4.2m left
+  dama step 250/972 (26%) loss 0.611 elapsed 1.4m, ~4.0m left
+  dama step 300/972 (31%) loss 1.730 elapsed 1.6m, ~3.5m left
+  dama step 350/972 (36%) loss 0.968 elapsed 1.9m, ~3.3m left
+  dama step 400/972 (41%) loss 1.573 elapsed 2.2m, ~3.1m left
+  dama step 450/972 (46%) loss 1.614 elapsed 2.5m, ~2.9m left
+  dama step 500/972 (51%) loss 0.879 elapsed 2.8m, ~2.6m left
+  dama step 550/972 (57%) loss 0.513 elapsed 3.1m, ~2.4m left
+  dama step 600/972 (62%) loss 0.419 elapsed 3.3m, ~2.0m left
+  dama step 650/972 (67%) loss 1.530 elapsed 3.5m, ~1.8m left
+  dama step 700/972 (72%) loss 0.653 elapsed 3.9m, ~1.5m left
+  dama step 750/972 (77%) loss 1.073 elapsed 4.1m, ~1.2m left
+  dama step 800/972 (82%) loss 0.605 elapsed 4.4m, ~1.0m left
+  dama step 850/972 (87%) loss 1.456 elapsed 4.7m, ~0.7m left
+  dama step 900/972 (93%) loss 1.889 elapsed 4.9m, ~0.4m left
+  dama step 950/972 (98%) loss 0.610 elapsed 5.2m, ~0.1m left
+RESULT {"ds": "fleurs", "lang": "cy_gb", "method": "dama", "lr": 0.0005, "wer": 43.3, "trainable_M": 3.83, "peak_gb": 2.93, "train_s": 324, "n_test": 248}
+
+=== fleurs:fa_ir: caching features (15:53) ===
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 19199.11it/s]
+  caching train: 640/2580
+  caching train: 1280/2580
+  caching train: 1920/2580
+  caching train: 2560/2580
+--- [16/20 runs done, 80%] fleurs:fa_ir dama start 15:53, overall ETA ~0.9h
+  dama step 50/860 (6%) loss 0.761 elapsed 0.2m, ~3.4m left
+  dama step 100/860 (12%) loss 0.577 elapsed 0.5m, ~4.1m left
+  dama step 150/860 (17%) loss 0.544 elapsed 0.9m, ~4.1m left
+  dama step 200/860 (23%) loss 0.446 elapsed 1.2m, ~3.9m left
+  dama step 250/860 (29%) loss 0.357 elapsed 1.5m, ~3.7m left
+  dama step 300/860 (35%) loss 0.390 elapsed 1.8m, ~3.4m left
+  dama step 350/860 (41%) loss 0.255 elapsed 2.2m, ~3.1m left
+  dama step 400/860 (47%) loss 0.368 elapsed 2.5m, ~2.8m left
+  dama step 450/860 (52%) loss 0.205 elapsed 2.8m, ~2.5m left
+  dama step 500/860 (58%) loss 0.194 elapsed 3.1m, ~2.2m left
+  dama step 550/860 (64%) loss 0.152 elapsed 3.4m, ~1.9m left
+  dama step 600/860 (70%) loss 0.200 elapsed 3.8m, ~1.6m left
+  dama step 650/860 (76%) loss 0.134 elapsed 4.1m, ~1.3m left
+  dama step 700/860 (81%) loss 0.146 elapsed 4.4m, ~1.0m left
+  dama step 750/860 (87%) loss 0.198 elapsed 4.7m, ~0.7m left
+  dama step 800/860 (93%) loss 0.146 elapsed 5.1m, ~0.4m left
+  dama step 850/860 (99%) loss 0.156 elapsed 5.4m, ~0.1m left
+RESULT {"ds": "fleurs", "lang": "fa_ir", "method": "dama", "lr": 0.0005, "wer": 26.01, "trainable_M": 3.83, "peak_gb": 3.36, "train_s": 325, "n_test": 234}
+
+=== fleurs:sw_ke: caching features (16:04) ===
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 16459.71it/s]
+  caching train: 640/2360
+  caching train: 1280/2360
+  caching train: 1920/2360
+--- [17/20 runs done, 85%] fleurs:sw_ke dama start 16:04, overall ETA ~0.7h
+  dama step 50/786 (6%) loss 1.131 elapsed 0.3m, ~4.6m left
+  dama step 100/786 (13%) loss 0.942 elapsed 0.6m, ~4.3m left
+  dama step 150/786 (19%) loss 0.953 elapsed 0.9m, ~3.9m left
+  dama step 200/786 (25%) loss 0.572 elapsed 1.2m, ~3.6m left
+  dama step 250/786 (32%) loss 0.710 elapsed 1.5m, ~3.3m left
+  dama step 300/786 (38%) loss 0.444 elapsed 1.9m, ~3.0m left
+  dama step 350/786 (45%) loss 0.481 elapsed 2.2m, ~2.7m left
+  dama step 400/786 (51%) loss 0.393 elapsed 2.5m, ~2.4m left
+  dama step 450/786 (57%) loss 0.395 elapsed 2.8m, ~2.1m left
+  dama step 500/786 (64%) loss 0.273 elapsed 3.1m, ~1.8m left
+  dama step 550/786 (70%) loss 0.190 elapsed 3.4m, ~1.5m left
+  dama step 600/786 (76%) loss 0.532 elapsed 3.7m, ~1.1m left
+  dama step 650/786 (83%) loss 0.185 elapsed 4.0m, ~0.8m left
+  dama step 700/786 (89%) loss 0.440 elapsed 4.3m, ~0.5m left
+  dama step 750/786 (95%) loss 0.244 elapsed 4.6m, ~0.2m left
+RESULT {"ds": "fleurs", "lang": "sw_ke", "method": "dama", "lr": 0.0005, "wer": 34.02, "trainable_M": 3.83, "peak_gb": 2.96, "train_s": 290, "n_test": 258}
+
+=== fleurs:lg_ug: caching features (16:12) ===
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 19131.83it/s]
+  caching train: 640/2100
+  caching train: 1280/2100
+  caching train: 1920/2100
+--- [18/20 runs done, 90%] fleurs:lg_ug dama start 16:13, overall ETA ~0.4h
+  dama step 50/700 (7%) loss 1.532 elapsed 0.3m, ~4.4m left
+  dama step 100/700 (14%) loss 1.192 elapsed 0.7m, ~4.1m left
+  dama step 150/700 (21%) loss 1.306 elapsed 1.0m, ~3.7m left
+  dama step 200/700 (29%) loss 1.186 elapsed 1.4m, ~3.4m left
+  dama step 250/700 (36%) loss 1.292 elapsed 1.7m, ~3.0m left
+  dama step 300/700 (43%) loss 1.210 elapsed 2.0m, ~2.7m left
+  dama step 350/700 (50%) loss 1.350 elapsed 2.5m, ~2.5m left
+  dama step 400/700 (57%) loss 0.706 elapsed 2.8m, ~2.1m left
+  dama step 450/700 (64%) loss 0.960 elapsed 3.1m, ~1.7m left
+  dama step 500/700 (71%) loss 0.653 elapsed 3.5m, ~1.4m left
+  dama step 550/700 (79%) loss 0.685 elapsed 3.8m, ~1.0m left
+  dama step 600/700 (86%) loss 0.631 elapsed 4.2m, ~0.7m left
+  dama step 650/700 (93%) loss 0.749 elapsed 4.6m, ~0.4m left
+  dama step 700/700 (100%) loss 0.808 elapsed 4.9m, ~0.0m left
+RESULT {"ds": "fleurs", "lang": "lg_ug", "method": "dama", "lr": 0.0005, "wer": 60.87, "trainable_M": 43.67, "peak_gb": 3.16, "train_s": 296, "n_test": 217}
+
+=== fleurs:ceb_ph: caching features (16:20) ===
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 16357.45it/s]
+  caching train: 640/2702
+  caching train: 1280/2702
+  caching train: 1920/2702
+  caching train: 2560/2702
+--- [19/20 runs done, 95%] fleurs:ceb_ph dama start 16:20, overall ETA ~0.2h
+  dama step 50/900 (6%) loss 1.316 elapsed 0.2m, ~2.8m left
+  dama step 100/900 (11%) loss 0.671 elapsed 0.4m, ~3.5m left
+  dama step 150/900 (17%) loss 0.694 elapsed 0.7m, ~3.4m left
+  dama step 200/900 (22%) loss 0.575 elapsed 0.9m, ~3.2m left
+  dama step 250/900 (28%) loss 0.729 elapsed 1.2m, ~3.0m left
+  dama step 300/900 (33%) loss 0.598 elapsed 1.4m, ~2.9m left
+  dama step 350/900 (39%) loss 0.557 elapsed 1.7m, ~2.6m left
+  dama step 400/900 (44%) loss 0.645 elapsed 1.9m, ~2.4m left
+  dama step 450/900 (50%) loss 0.642 elapsed 2.2m, ~2.2m left
+  dama step 500/900 (56%) loss 0.327 elapsed 2.3m, ~1.9m left
+  dama step 550/900 (61%) loss 0.567 elapsed 2.6m, ~1.6m left
+  dama step 600/900 (67%) loss 0.500 elapsed 2.8m, ~1.4m left
+  dama step 650/900 (72%) loss 0.273 elapsed 3.1m, ~1.2m left
+  dama step 700/900 (78%) loss 0.369 elapsed 3.3m, ~1.0m left
+  dama step 750/900 (83%) loss 0.422 elapsed 3.6m, ~0.7m left
+  dama step 800/900 (89%) loss 0.359 elapsed 3.9m, ~0.5m left
+  dama step 850/900 (94%) loss 0.225 elapsed 4.1m, ~0.2m left
+  dama step 900/900 (100%) loss 0.433 elapsed 4.3m, ~0.0m left
+RESULT {"ds": "fleurs", "lang": "ceb_ph", "method": "dama", "lr": 0.0005, "wer": 20.57, "trainable_M": 43.67, "peak_gb": 3.31, "train_s": 260, "n_test": 243}
+ALL DONE 16:27
